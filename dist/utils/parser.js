@@ -29,7 +29,10 @@ export function parseWfcInterfaces(source) {
             continue;
         }
         const params = match[3].trim()
-            ? match[3].split(',').map((param) => param.trim()).filter(Boolean)
+            ? match[3]
+                .split(',')
+                .map(param => param.trim())
+                .filter(Boolean)
             : [];
         let jsdoc;
         let probe = index - 1;
@@ -47,7 +50,7 @@ export function parseWfcInterfaces(source) {
         entries.push({
             name: methodName,
             params,
-            jsdoc,
+            jsdoc
         });
     }
     return dedupeByName(entries);
@@ -62,7 +65,7 @@ function dedupeByName(list) {
     return Array.from(map.values());
 }
 export function extractInterfaceDocs(interfaces, name) {
-    return interfaces.find((item) => item.name === name);
+    return interfaces.find(item => item.name === name);
 }
 export function parseEvents(source) {
     if (!source) {
@@ -136,7 +139,7 @@ function parseMessageConfig(source) {
             name: match[1],
             flag: match[2].trim(),
             typeEnum: match[3],
-            contentClazz: match[4],
+            contentClazz: match[4]
         });
     }
     return results;
@@ -209,26 +212,26 @@ function parsePersistFlags(source) {
     }
     return results;
 }
-export function parseMessageMeta(options) {
-    const configSource = readFileSafe(options.messageConfigPath);
+export function parseMessageMeta({ messageConfigPath, messageDir, messageContentTypePath, persistFlagPath }) {
+    const configSource = readFileSafe(messageConfigPath);
     if (!configSource) {
         return [];
     }
-    const enumSource = readFileSafe(options.messageContentTypePath);
-    const flagSource = readFileSafe(options.persistFlagPath);
+    const enumSource = readFileSafe(messageContentTypePath);
+    const flagSource = readFileSafe(persistFlagPath);
     const enumEntries = parseEnumFile(enumSource);
     const flagEntries = parsePersistFlags(flagSource);
-    const enumMap = new Map(enumEntries.map((entry) => [entry.enumName, entry]));
-    const flagMap = new Map(flagEntries.map((entry) => [entry.name, entry]));
+    const enumMap = new Map(enumEntries.map(entry => [entry.enumName, entry]));
+    const flagMap = new Map(flagEntries.map(entry => [entry.name, entry]));
     const configEntries = parseMessageConfig(configSource);
     const classMetaMap = new Map();
-    if (fs.existsSync(options.messageDir)) {
-        const files = fs.readdirSync(options.messageDir);
+    if (fs.existsSync(messageDir)) {
+        const files = fs.readdirSync(messageDir);
         for (const fileName of files) {
             if (!fileName.endsWith('.js') && !fileName.endsWith('.ts')) {
                 continue;
             }
-            const fullPath = path.join(options.messageDir, fileName);
+            const fullPath = path.join(messageDir, fileName);
             const content = readFileSafe(fullPath);
             if (!content) {
                 continue;
@@ -239,27 +242,30 @@ export function parseMessageMeta(options) {
                     filePath: fullPath,
                     className: classInfo.className,
                     baseClass: classInfo.baseClass,
-                    jsdoc: classInfo.jsdoc,
+                    jsdoc: classInfo.jsdoc
                 });
             }
         }
     }
-    return configEntries.map((entry) => {
+    return configEntries.map(entry => {
         const meta = classMetaMap.get(entry.contentClazz);
         const enumInfo = enumMap.get(entry.typeEnum);
-        const flagInfo = flagMap.get(entry.flag);
+        const flagKey = entry.flag.includes('.') ? entry.flag.split('.').pop() ?? entry.flag : entry.flag;
+        const flagInfo = flagMap.get(flagKey);
+        const relativePath = meta?.filePath ? path.relative(messageDir, meta.filePath) : null;
         return {
             name: entry.name,
             flag: entry.flag,
-            flagValue: flagInfo?.value,
-            flagDescription: flagInfo?.jsdoc,
+            flagValue: flagInfo?.value ?? null,
+            flagDescription: flagInfo?.jsdoc ?? null,
             typeEnum: entry.typeEnum,
-            typeValue: enumInfo?.value,
-            typeDescription: enumInfo?.jsdoc,
+            typeValue: enumInfo?.value ?? null,
+            typeDescription: enumInfo?.jsdoc ?? null,
             contentClazz: entry.contentClazz,
-            classFile: meta?.filePath,
-            extends: meta?.baseClass,
-            jsdoc: meta?.jsdoc,
+            classFile: meta?.filePath ?? null,
+            classFileRelative: relativePath,
+            extends: meta?.baseClass ?? null,
+            jsdoc: meta?.jsdoc ?? null
         };
     });
 }
