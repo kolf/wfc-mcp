@@ -1,0 +1,1538 @@
+[
+  {
+    "name": "unknown",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "Unknown",
+    "contentClazz": "UnknownMessageContent"
+  },
+  {
+    "name": "text",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Text",
+    "contentClazz": "TextMessageContent"
+  },
+  {
+    "name": "ptext",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "P_Text",
+    "contentClazz": "PTextMessageContent"
+  },
+  {
+    "name": "voice",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Voice",
+    "contentClazz": "SoundMessageContent"
+  },
+  {
+    "name": "image",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Image",
+    "contentClazz": "ImageMessageContent"
+  },
+  {
+    "name": "location",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Location",
+    "contentClazz": "LocationMessageContent"
+  },
+  {
+    "name": "file",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "File",
+    "contentClazz": "FileMessageContent"
+  },
+  {
+    "name": "video",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Video",
+    "contentClazz": "VideoMessageContent"
+  },
+  {
+    "name": "sticker",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Sticker",
+    "contentClazz": "StickerMessageContent"
+  },
+  {
+    "name": "link",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Link",
+    "contentClazz": "LinkMessageContent"
+  },
+  {
+    "name": "userCard",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "UserCard",
+    "contentClazz": "CardMessageContent"
+  },
+  {
+    "name": "compositeMessage",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Composite_Message",
+    "contentClazz": "CompositeMessageContent"
+  },
+  {
+    "name": "tip",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "Tip_Notification",
+    "contentClazz": "TipNotificationMessageContent"
+  },
+  {
+    "name": "typing",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "Typing",
+    "contentClazz": "TypingMessageContent"
+  },
+  {
+    "name": "friendGreeting",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Friend_Added",
+    "contentClazz": "FriendGreetingNotification"
+  },
+  {
+    "name": "friendAdded",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Friend_Greeting",
+    "contentClazz": "FriendAddedNotification"
+  },
+  {
+    "name": "addGroupMemberNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "AddGroupMember_Notification",
+    "contentClazz": "AddGroupMemberNotification"
+  },
+  {
+    "name": "changeGroupNameNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "ChangeGroupName_Notification",
+    "contentClazz": "ChangeGroupNameNotification"
+  },
+  {
+    "name": "changeGroupPortraitNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "ChangeGroupPortrait_Notification",
+    "contentClazz": "ChangeGroupPortraitNotification"
+  },
+  {
+    "name": "createGroupNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CreateGroup_Notification",
+    "contentClazz": "CreateGroupNotification"
+  },
+  {
+    "name": "dismissGroupNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "DismissGroup_Notification",
+    "contentClazz": "DismissGroupNotification"
+  },
+  {
+    "name": "kickoffGroupMemberNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "KickOffGroupMember_Notification",
+    "contentClazz": "KickoffGroupMemberNotification"
+  },
+  {
+    "name": "kickoffGroupMemberVisiableNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "KickOffGroupMember_Visible_Notification",
+    "contentClazz": "KickoffGroupMemberVisiableNotification"
+  },
+  {
+    "name": "modifyGroupAliasNotification",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "ModifyGroupAlias_Notification",
+    "contentClazz": "ModifyGroupAliasNotification"
+  },
+  {
+    "name": "modifyGroupExtraNotification",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "ModifyGroupExtra_Notification",
+    "contentClazz": "ModifyGroupExtraNotification"
+  },
+  {
+    "name": "modifyGroupMemberExtraNotification",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "ModifyGroupMemberExtra_Notification",
+    "contentClazz": "ModifyGroupMemberExtraNotification"
+  },
+  {
+    "name": "quitGroupNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "QuitGroup_Notification",
+    "contentClazz": "QuitGroupNotification"
+  },
+  {
+    "name": "quitGroupVisiableNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "QuitGroup_Visible_Notification",
+    "contentClazz": "QuitGroupVisiableNotification"
+  },
+  {
+    "name": "transferGroupOwnerNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "TransferGroupOwner_Notification",
+    "contentClazz": "TransferGroupOwnerNotification"
+  },
+  {
+    "name": "groupJoinTypeNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "ChangeJoinType_Notification",
+    "contentClazz": "GroupJoinTypeNotificationContent"
+  },
+  {
+    "name": "groupMuteNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "MuteGroup_Notification",
+    "contentClazz": "GroupMuteNotificationContent"
+  },
+  {
+    "name": "groupPrivateChatNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "ChangePrivateChat_Notification",
+    "contentClazz": "GroupPrivateChatNotificationContent"
+  },
+  {
+    "name": "groupSetManagerNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SetGroupManager_Notification",
+    "contentClazz": "GroupSetManagerNotificationContent"
+  },
+  {
+    "name": "muteGroupMemberNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "MuteGroupMember_Notification",
+    "contentClazz": "MuteGroupMemberNotification"
+  },
+  {
+    "name": "allowGroupMemberNotificationContent",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "AllowGroupMember_Notification",
+    "contentClazz": "AllowGroupMemberNotification"
+  },
+  {
+    "name": "recall",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "RecallMessage_Notification",
+    "contentClazz": "RecallMessageNotification"
+  },
+  {
+    "name": "delete",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "DeleteMessage_Notification",
+    "contentClazz": "DeleteMessageContent"
+  },
+  {
+    "name": "markUnreadMessage",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Mark_Unread_Sync",
+    "contentClazz": "MarkUnreadMessageContent"
+  },
+  {
+    "name": "startSecretChat",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "StartSecretChat_Notification",
+    "contentClazz": "StartSecretChatNotification"
+  },
+  {
+    "name": "richNotification",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Rich_Notification",
+    "contentClazz": "RichNotificationMessageContent"
+  },
+  {
+    "name": "articlesMessageContent",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Articles",
+    "contentClazz": "ArticlesMessageContent"
+  },
+  {
+    "name": "channelMenuEventMessageContent",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "Channel_Menu_Event",
+    "contentClazz": "ChannelMenuEventMessageContent"
+  },
+  {
+    "name": "enterChannelChatMessageContent",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "Enter_Channel_Chat",
+    "contentClazz": "EnterChannelChatMessageContent"
+  },
+  {
+    "name": "leaveChannelChatMessageContent",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "Leave_Channel_Chat",
+    "contentClazz": "LeaveChannelChatMessageContent"
+  },
+  {
+    "name": "privateImage",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Image_VV",
+    "contentClazz": "PrivateImageMessageContent"
+  },
+  {
+    "name": "privateVideo",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Video_VV",
+    "contentClazz": "PrivateVideoMessageContent"
+  },
+  {
+    "name": "privateFile",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "File_VV",
+    "contentClazz": "PrivateFileMessageContent"
+  },
+  {
+    "name": "webRecruitNotify",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Web_Recruit_VV",
+    "contentClazz": "PrivateWebRecruitMessageContent"
+  },
+  {
+    "name": "App_Combine_Transmit_VV",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "App_Combine_Transmit_VV",
+    "contentClazz": "MergeMessageContent"
+  },
+  {
+    "name": "App_Reply_VV",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "App_Reply_VV",
+    "contentClazz": "ReplyMessageContent"
+  },
+  {
+    "name": "CONTACT_CONTENT_TYPE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CONTACT_CONTENT_TYPE_CARD",
+    "contentClazz": "ContactCardMessageContent"
+  },
+  {
+    "name": "CONTACT_QR_CODE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CONTACT_QR_CODE_CARD",
+    "contentClazz": "QrCodeCardMessageContent"
+  },
+  {
+    "name": "GROUP_CONTACT_QR_CODE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "GROUP_CONTACT_QR_CODE_CARD",
+    "contentClazz": "GroupQRCodeCardMessageContent"
+  },
+  {
+    "name": "READ_RECEIPT_PRECISE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "READ_RECEIPT_PRECISE",
+    "contentClazz": "ReadReceiptMessageContent"
+  },
+  {
+    "name": "URGENT_MSG_PRECISE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "URGENT_MSG_PRECISE",
+    "contentClazz": "ReadUrgentMsgMessageContent"
+  },
+  {
+    "name": "READ_RECEIPT_INCREMENTAL",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "READ_RECEIPT_INCREMENTAL",
+    "contentClazz": "ReadReceiptIncrementalMessageContent"
+  },
+  {
+    "name": "EMOJI_RECEIPT",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "EMOJI_RECEIPT",
+    "contentClazz": "EmojiReceiptMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_NOT_HANDLE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "CALENDAR_TYPE_NOT_HANDLE",
+    "contentClazz": "CalendarNotHandleMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_INVITATION",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CALENDAR_TYPE_INVITATION",
+    "contentClazz": "CalendarInvitationMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_INVITATION_NEW",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CALENDAR_TYPE_INVITATION_NEW",
+    "contentClazz": "CalendarInvitationMessageContentNew"
+  },
+  {
+    "name": "CALENDAR_TYPE_ACCEPT",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CALENDAR_TYPE_ACCEPT",
+    "contentClazz": "CalendarAcceptMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_REFUSE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CALENDAR_TYPE_REFUSE",
+    "contentClazz": "CalendarRefuseMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_PENDING",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CALENDAR_TYPE_PENDING",
+    "contentClazz": "CalendarPendingMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_REMIND",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CALENDAR_TYPE_REMIND",
+    "contentClazz": "CalendarRemindMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_CANCELED",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CALENDAR_TYPE_CANCELED",
+    "contentClazz": "CalendarCanceledMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_CHANGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CALENDAR_TYPE_CHANGE",
+    "contentClazz": "CalendarChangeMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_CHANGE_NEW",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CALENDAR_TYPE_CHANGE_NEW",
+    "contentClazz": "CalendarChangeMessageContentNew"
+  },
+  {
+    "name": "CALENDAR_TYPE_CONFLICT",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CALENDAR_TYPE_CONFLICT",
+    "contentClazz": "CalendarConflictMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_REMIND_INVITATION",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CALENDAR_TYPE_REMIND_INVITATION",
+    "contentClazz": "CalendarRemindInvitationMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_REMIND_CANCELED",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "CALENDAR_TYPE_REMIND_CANCELED",
+    "contentClazz": "CalendarRemindCanceledMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_CLOSE_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CALENDAR_TYPE_CLOSE_NOTICE",
+    "contentClazz": "CalendarCloseNoticeMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_CANCEL_INVITATION",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CALENDAR_TYPE_CANCEL_INVITATION",
+    "contentClazz": "CalendarCancelInvitationMessageContent"
+  },
+  {
+    "name": "CALENDAR_TYPE_REJECT_REASON",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "CALENDAR_TYPE_REJECT_REASON",
+    "contentClazz": "CalendarRejectReasonCardContent"
+  },
+  {
+    "name": "GROUP_CONTENT_TYPE_ANNOUNCEMENT",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "GROUP_CONTENT_TYPE_ANNOUNCEMENT",
+    "contentClazz": "GroupAnnouncementMessageContent"
+  },
+  {
+    "name": "GROUP_CONTENT_TYPE_TOP_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "GROUP_CONTENT_TYPE_TOP_NOTICE",
+    "contentClazz": "GroupTopNoticeMessageContent"
+  },
+  {
+    "name": "APPROVAL_CONTENT_TYPE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "APPROVAL_CONTENT_TYPE_CARD",
+    "contentClazz": "ApprovalCardMessageContent"
+  },
+  {
+    "name": "systemNotification",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "System_Notification",
+    "contentClazz": "SystemNotificationMessageContent"
+  },
+  {
+    "name": "tenantRobotNotification",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Tenant_Robot_Notification",
+    "contentClazz": "TenantRobotNotificationMessageContent"
+  },
+  {
+    "name": "LINK_CONTENT_TYPE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "LINK_CONTENT_TYPE",
+    "contentClazz": "LinkUrlMessageContent"
+  },
+  {
+    "name": "LINK_MEETING_TYPE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "LINK_MEETING_TYPE",
+    "contentClazz": "LinkMeetingMessageContent"
+  },
+  {
+    "name": "messageAssistantNotification",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Message_Assistant_Notification",
+    "contentClazz": "MessageAssistantNotificationMessageContent"
+  },
+  {
+    "name": "privateVoice",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Voice_VV",
+    "contentClazz": "PrivateVoiceMessageContent"
+  },
+  {
+    "name": "VOICE_VIDEO_CONTENT_TYPE_INVITE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "VOICE_VIDEO_CONTENT_TYPE_INVITE",
+    "contentClazz": "VoiceVideoCallMessageContent"
+  },
+  {
+    "name": "VOICE_VIDEO_CONTENT_TYPE_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "VOICE_VIDEO_CONTENT_TYPE_MESSAGE",
+    "contentClazz": "VoiceVideoCallMessageContentMessage"
+  },
+  {
+    "name": "Forward_Work_Card",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Forward_Work_Card",
+    "contentClazz": "ForwardWorkCardMessageContent"
+  },
+  {
+    "name": "Task_Card_Popup",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Task_Card_Popup",
+    "contentClazz": "TaskCardPopMessageContent"
+  },
+  {
+    "name": "Close_Task_Card_Popup",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Close_Task_Card_Popup",
+    "contentClazz": "CloseTaskCardPopMessageContent"
+  },
+  {
+    "name": "VOICE_VIDEO_BREAK_OFF_NOTIFICATION",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "VOICE_VIDEO_BREAK_OFF_NOTIFICATION",
+    "contentClazz": "VoiceVideoBreakOffMessageContent"
+  },
+  {
+    "name": "READ_VOICE_MESSAGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "READ_VOICE_MESSAGE",
+    "contentClazz": "ReadVoiceMessageContent"
+  },
+  {
+    "name": "MEETING_INVITING",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "MEETING_INVITING",
+    "contentClazz": "MeetingInviteMessageContent"
+  },
+  {
+    "name": "MEETING_INFO_UPDATE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "MEETING_INFO_UPDATE",
+    "contentClazz": "MeetingInfoUpdateMessageContent"
+  },
+  {
+    "name": "MEETING_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "MEETING_NOTICE",
+    "contentClazz": "MeetingNoticeMessageContent"
+  },
+  {
+    "name": "MSG_URGENT_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "MSG_URGENT_NOTICE",
+    "contentClazz": "MsgUrgentNoticeMessageContent"
+  },
+  {
+    "name": "MEETING_RECORDING_NOTICE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "MEETING_RECORDING_NOTICE",
+    "contentClazz": "MeetingRecordingMessageContent"
+  },
+  {
+    "name": "MESSAGE_CONTENT_TYPE_INTO_GROUP",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "MESSAGE_CONTENT_TYPE_INTO_GROUP",
+    "contentClazz": "MessageContentTypeIntoGroup"
+  },
+  {
+    "name": "MESSAGE_CONTENT_TYPE_TO_BE_OWNER",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "MESSAGE_CONTENT_TYPE_TO_BE_OWNER",
+    "contentClazz": "MessageContentTypeToBeOwner"
+  },
+  {
+    "name": "COMMON_CARD_SEND",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "COMMON_CARD_SEND",
+    "contentClazz": "CommonCardSendMessageContent"
+  },
+  {
+    "name": "COMMON_CARD_CLOSE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "COMMON_CARD_CLOSE",
+    "contentClazz": "CommonCardCloseMessageContent"
+  },
+  {
+    "name": "RICH_TEXT_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RICH_TEXT_MESSAGE",
+    "contentClazz": "PrivateRichTextMessageContent"
+  },
+  {
+    "name": "CREATE_GROUP_AVATAR_MESSAGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "CREATE_GROUP_AVATAR_MESSAGE",
+    "contentClazz": "PrivateCreateGroupAvatarMessageContent"
+  },
+  {
+    "name": "cancellationMemberNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CancellationMember_Notification",
+    "contentClazz": "CancellationMemberNotification"
+  },
+  {
+    "name": "RECRUIT_TYPE_NOTICE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUIT_TYPE_NOTICE_MESSAGE",
+    "contentClazz": "RecruitTypeNoticeMessageContent"
+  },
+  {
+    "name": "RECRUIT_TYPE_NOTICE_MESSAGE_NEW",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUIT_TYPE_NOTICE_MESSAGE_NEW",
+    "contentClazz": "RecruitTypeNoticeMessageContentNew"
+  },
+  {
+    "name": "JOB_INVITATION_TYPE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "JOB_INVITATION_TYPE_MESSAGE",
+    "contentClazz": "JobInvitationTypeMessageContent"
+  },
+  {
+    "name": "SHARE_RESUME_WITH_SELF",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "SHARE_RESUME_WITH_SELF",
+    "contentClazz": "JobInvitationShareMessageContent"
+  },
+  {
+    "name": "SHARE_EMAIL_RESUME_WITH_SELF",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "SHARE_EMAIL_RESUME_WITH_SELF",
+    "contentClazz": "jobInvitationShareEmailMessageContent"
+  },
+  {
+    "name": "JOB_INVITATION_TYPE_NOTICE_MESSAGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "JOB_INVITATION_TYPE_NOTICE_MESSAGE",
+    "contentClazz": "JobInvitationTypeNoticeMessageContent"
+  },
+  {
+    "name": "RECRUITMENT_APPROVED",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUITMENT_APPROVED",
+    "contentClazz": "RecruitmentApprovedContent"
+  },
+  {
+    "name": "TODO_SYSTEM_NOTICE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "TODO_SYSTEM_NOTICE",
+    "contentClazz": "TODOSystemNoticeMessageContent"
+  },
+  {
+    "name": "TODO_SYSTEM_SUCCESS_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "TODO_SYSTEM_SUCCESS_NOTICE",
+    "contentClazz": "TODOSystemSuccessNoticeMessageContent"
+  },
+  {
+    "name": "PERSONAL_FILE_CARD_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "PERSONAL_FILE_CARD_MESSAGE",
+    "contentClazz": "PersonalFileCardMessageContent"
+  },
+  {
+    "name": "WORK_MANAGE_CARD_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGE_CARD",
+    "contentClazz": "WorkManageCardContent"
+  },
+  {
+    "name": "jobInterestedMessage",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "JOB_CARD_SEEKER_MESSAGE",
+    "contentClazz": "JobCardSeekerMessageContent"
+  },
+  {
+    "name": "JOB_INTERESTED_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "JOB_INTERESTED_MESSAGE",
+    "contentClazz": "JobInterestedMessageNotification"
+  },
+  {
+    "name": "SEND_VITAE_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SEND_VITAE_MESSAGE",
+    "contentClazz": "SendVitaeMessageNotification"
+  },
+  {
+    "name": "VITAE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "VITAE_MESSAGE",
+    "contentClazz": "VitaeMessageContent"
+  },
+  {
+    "name": "JOB_CARD_EMPLOYER_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "JOB_CARD_EMPLOYER_MESSAGE",
+    "contentClazz": "JobCardEmployerMessageContent"
+  },
+  {
+    "name": "REQUEST_VITAE_SEEKER_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "REQUEST_VITAE_SEEKER_MESSAGE",
+    "contentClazz": "RequestVitaeSeekerMessageContent"
+  },
+  {
+    "name": "REQUEST_VITAE_EMPLOYER_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "REQUEST_VITAE_EMPLOYER_MESSAGE",
+    "contentClazz": "RequestVitaeEmployerMessageNotification"
+  },
+  {
+    "name": "CONVERSATION_UPDATE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "CONVERSATION_UPDATE",
+    "contentClazz": "ConversationUpdateMessageNotification"
+  },
+  {
+    "name": "TRANSFER_LEAVE_NOTICE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "TRANSFER_LEAVE_NOTICE",
+    "contentClazz": "TransferLeaveMessageNotification"
+  },
+  {
+    "name": "FORWARD_WORK_PROJECT_OUTPUT_RISK",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "FORWARD_WORK_PROJECT_OUTPUT_RISK",
+    "contentClazz": "ForwardWorkProjectOutputRiskMessageContent"
+  },
+  {
+    "name": "RECORDER_STATUS_SYNC_MESSAGE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "RECORDER_STATUS_SYNC_MESSAGE",
+    "contentClazz": "RecorderStatusSyncMessageContent"
+  },
+  {
+    "name": "USERINFO_UPDATE_MESSAGE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "USERINFO_UPDATE_MESSAGE",
+    "contentClazz": "PrivateUserInfoUpdateMessageContent"
+  },
+  {
+    "name": "DOCUMENT_INVITE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "DOCUMENT_INVITE_CARD",
+    "contentClazz": "DocumentInviteCardMessageContent"
+  },
+  {
+    "name": "DOCUMENT_SHARE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "DOCUMENT_SHARE_CARD",
+    "contentClazz": "DocumentShareCardMessageContent"
+  },
+  {
+    "name": "DOCUMENT_LINK_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "DOCUMENT_LINK_CARD",
+    "contentClazz": "DocumentLinkShareCardContent"
+  },
+  {
+    "name": "DOCUMENT_AUTH_CHANGE_NOTICE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "DOCUMENT_AUTH_CHANGE_NOTICE",
+    "contentClazz": "DocumentAuthChangeNotifiCation"
+  },
+  {
+    "name": "MICRO_DISK_STATUS_SYNC_MESSAGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "MICRO_DISK_STATUS_SYNC_MESSAGE",
+    "contentClazz": "MicroDIskMessageContent"
+  },
+  {
+    "name": "MUL_RTC_INVITE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "MUL_RTC_INVITE_CARD",
+    "contentClazz": "MulRtcInviteMessageContent"
+  },
+  {
+    "name": "TODO_WORKFLOW_TODO_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "TODO_WORKFLOW_TODO_MESSAGE",
+    "contentClazz": "WorkFlowTodoMessageContent"
+  },
+  {
+    "name": "TODO_WORKFLOW_TODO_MESSAGE_UPDATE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "TODO_WORKFLOW_TODO_MESSAGE_UPDATE",
+    "contentClazz": "WorkFlowTodoMessageUpdateContent"
+  },
+  {
+    "name": "COMPLEX_RICH_TEXT_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "COMPLEX_RICH_TEXT_MESSAGE",
+    "contentClazz": "ComplexRichTextMessageContent"
+  },
+  {
+    "name": "STRANGER_NOTICE_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "STRANGER_NOTICE_MESSAGE",
+    "contentClazz": "StrangerNoticeMessageContent"
+  },
+  {
+    "name": "VITAE_INVITATION_CARD_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "VITAE_INVITATION_CARD_MESSAGE",
+    "contentClazz": "VitaeInvitationCardMessageContent"
+  },
+  {
+    "name": "JOB_INTENTION_CARD_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "JOB_INTENTION_CARD_MESSAGE",
+    "contentClazz": "JobIntentionCardMessageContent"
+  },
+  {
+    "name": "UPDATE_JOB_INTENTION_STATUS_MESSAGE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "UPDATE_JOB_INTENTION_STATUS_MESSAGE",
+    "contentClazz": "UpdateJobIntentionStatusMessageContent"
+  },
+  {
+    "name": "JOB_CARD_BOTH_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "JOB_CARD_BOTH_MESSAGE",
+    "contentClazz": "JobCardBothMessageContent"
+  },
+  {
+    "name": "PRIVATE_VITAE_REQUEST_CARD_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "PRIVATE_VITAE_REQUEST_CARD_MESSAGE",
+    "contentClazz": "PrivateVitaeRequestCardMessageContent"
+  },
+  {
+    "name": "PAY_ACCOUNT_CHANGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "PAY_ACCOUNT_CHANGE",
+    "contentClazz": "PayCardMessageContent"
+  },
+  {
+    "name": "FEEDBACK_MANAGE_NOTICE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "FEEDBACK_MANAGE_NOTICE",
+    "contentClazz": "FeedbackManageCardContent"
+  },
+  {
+    "name": "PUBLIC_VITAE_NOTICE_TO_RECRUITER",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "PUBLIC_VITAE_NOTICE_TO_RECRUITER",
+    "contentClazz": "PublicVitaeNoticeToRecruiterMessageContent"
+  },
+  {
+    "name": "PUBLIC_VITAE_NOTICE_TO_SEEKER",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "PUBLIC_VITAE_NOTICE_TO_SEEKER",
+    "contentClazz": "PublicVitaeNoticeToSeekerMessageContent"
+  },
+  {
+    "name": "RECRUITMENT_APPROVED_NOTICE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUITMENT_APPROVED_MESSAGE",
+    "contentClazz": "RecruitmentApprovedMessageContent"
+  },
+  {
+    "name": "RECRUITMENT_REFUSE_REASON_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUITMENT_REFUSE_REASON",
+    "contentClazz": "RecruimentRejectReasobCardContent"
+  },
+  {
+    "name": "SCHEDULE_SUBCRIBE_AGREEORREFUSE_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SCHEDULE_SUBCRIBE_AGREEORREFUSE",
+    "contentClazz": "ScheduleSubcribeAgreeOrRefuseContent"
+  },
+  {
+    "name": "SCHEDULE_SUBCRIBE_UNBIND_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SCHEDULE_SUBCRIBE_UNBIND",
+    "contentClazz": "ScheduleSubcribeUnbindContent"
+  },
+  {
+    "name": "SCHEDULE_SUBCRIBE_APPLY_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "SCHEDULE_SUBCRIBE_APPLY",
+    "contentClazz": "ScheduleSubcribeApplyContent"
+  },
+  {
+    "name": "SCHEDULE_SUBCRIBE_NOFICATION_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "SCHEDULE_SUBCRIBE_MESSASGE",
+    "contentClazz": "ScheduleSubcribeMessageContent"
+  },
+  {
+    "name": "SCHEDULE_SUBCRIBE_EXPIRED_MESSAGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "SCHEDULE_SUBCRIBE_EXPIRED",
+    "contentClazz": "ScheduleExpriedMessageContent"
+  },
+  {
+    "name": "FEEDBACK_HANDOVER_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "FEEDBACK_HANDOVER_NOTICE",
+    "contentClazz": "FeedbackHandoverCardContent"
+  },
+  {
+    "name": "CONTACTS_IGNORE_FRIEND_NOTICE",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CONTACTS_IGNORE_FRIEND_NOTICE",
+    "contentClazz": "ContactsIgnoreFriendContent"
+  },
+  {
+    "name": "GET_HIRING_INTENTIONS",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "GET_HIRING_INTENTIONS",
+    "contentClazz": "RecruitGetHiringIntentionsContent"
+  },
+  {
+    "name": "GET_HIRING_INTENTIONS_REASON",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "GET_HIRING_INTENTIONS_REASON",
+    "contentClazz": "RecruitGetHiringIntentionsReasonContent"
+  },
+  {
+    "name": "GET_HIRING_INTENTIONS_NO_REASON",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "GET_HIRING_INTENTIONS_NO_REASON",
+    "contentClazz": "RecruitGetHiringIntentionsNoReasonContent"
+  },
+  {
+    "name": "FEEDBACK_SHARE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "FEEDBACK_SHARE_MESSAGE",
+    "contentClazz": "FeedbackShareMessageContent"
+  },
+  {
+    "name": "RECRUIT_CHANGE_TIME_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUIT_CHANGE_TIME_CARD",
+    "contentClazz": "RecruitChangeTimeContent"
+  },
+  {
+    "name": "RECRUIT_CHANGE_TIME_TIPS",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "RECRUIT_CHANGE_TIME_TIPS",
+    "contentClazz": "RecruitChangeTimeMessageNotification"
+  },
+  {
+    "name": "WORK_FINISHED_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_FINISHED_NOTICE",
+    "contentClazz": "WorkFinishedCardContent"
+  },
+  {
+    "name": "OUTPUT_APPRAISE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "OUTPUT_APPRAISE_MESSAGE",
+    "contentClazz": "OutputAppraiseMessageContent"
+  },
+  {
+    "name": "OUTPUT_APPRAISE_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "OUTPUT_APPRAISE_MESSAGE_NEW",
+    "contentClazz": "OutputAppraiseMessageContentNew"
+  },
+  {
+    "name": "CONVERSATION_TIMESTAMP_SYNC",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "CONVERSATION_TIMESTAMP_SYNC",
+    "contentClazz": "ConversationTimestampSyncContent"
+  },
+  {
+    "name": "SEEKER_JOIN_WORK_MESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SEEKER_JOIN_WORK_MESSAGE",
+    "contentClazz": "SeekerJoinWorkMessageContent"
+  },
+  {
+    "name": "MAIL_MULTI_SYNC",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "MAIL_MULTI_SYNC",
+    "contentClazz": "MailMultiSyncMessageContent"
+  },
+  {
+    "name": "MAIL_MULTI_UNREAD_SYNC",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "MAIL_MULTI_UNREAD_SYNC",
+    "contentClazz": "MailMultiUnreadSyncMessageContent"
+  },
+  {
+    "name": "App_Friend_Card_VV",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "App_Friend_Card_VV",
+    "contentClazz": "AppFriendCardMessageContent"
+  },
+  {
+    "name": "GROUP_LINK_APPLICATION_NOTIFICATION",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "GROUP_LINK_APPLICATION_NOTIFICATION",
+    "contentClazz": "GroupLinkApplicationNotification"
+  },
+  {
+    "name": "MAIN_GROUP_AT_SUBGROUP_MESSAGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "MAIN_GROUP_AT_SUBGROUP_MESSAGE",
+    "contentClazz": "MainGroupAtSubGroupMessageContent"
+  },
+  {
+    "name": "SCAN_QR_JOIN_GROUP_NOTIFICATION",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "SCAN_QR_JOIN_GROUP_NOTIFICATION",
+    "contentClazz": "ScanQrJoinGroupNotificationContent"
+  },
+  {
+    "name": "LINK_GROUP_NOTIFICATION",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "LINK_GROUP_NOTIFICATION",
+    "contentClazz": "LinkGroupNotificationContent"
+  },
+  {
+    "name": "GROUP_LINK_APPLICATION_NOTIFICATION_SYNC",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "GROUP_LINK_APPLICATION_NOTIFICATION_SYNC",
+    "contentClazz": "GroupLinkApplicationNotificationSyncContent"
+  },
+  {
+    "name": "EXTERNAL_USER_JOIN_GROUP",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EXTERNAL_USER_JOIN_GROUP",
+    "contentClazz": "ExternalUserJoinGroupHint"
+  },
+  {
+    "name": "VV_CLOUD_DISK_APPLY_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "VV_CLOUD_DISK_APPLY_CARD",
+    "contentClazz": "vvCloudDiskContent"
+  },
+  {
+    "name": "VV_CLOUD_DISK_APPLY_RESULT_NOTIFICATION",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "VV_CLOUD_DISK_APPLY_RESULT_NOTIFICATION",
+    "contentClazz": "VVCloudDiskApplyResultNotification"
+  },
+  {
+    "name": "USER_STATUS_SYNC",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "USER_STATUS_SYNC",
+    "contentClazz": "UserStatusSyncMessageContent"
+  },
+  {
+    "name": "quitGroupStatusUpdateNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "QUIT_GROUP_STATUS_UPDATE",
+    "contentClazz": "QuitGroupStatusUpdateNotification"
+  },
+  {
+    "name": "eduGroupAddSuccessNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_GROUP_INVITER_SUCCESS",
+    "contentClazz": "EduGroupAddSuccessNotification"
+  },
+  {
+    "name": "eduJoinSuccessNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_JOIN_SUCCESS",
+    "contentClazz": "EduJoinSuccessNotification"
+  },
+  {
+    "name": "eduSendGroupInvitationNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_SEND_GROUP_INVITATION",
+    "contentClazz": "EduSendGroupInvitationNotification"
+  },
+  {
+    "name": "VIRTUAL_GROUP_ANSWER_MRESSAGE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "VIRTUAL_GROUP_ANSWER_MRESSAGE",
+    "contentClazz": "VirtualGroupAnswerMessageContent"
+  },
+  {
+    "name": "GENERAL_GROUP_INFO_CHANGE_NOTIFICATION",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "GENERAL_GROUP_INFO_CHANGE_NOTIFICATION",
+    "contentClazz": "GeneralGroupInfoChangeNotificationContent"
+  },
+  {
+    "name": "MAILBOX_EMAIL_VIEW_REQUEST",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EMAIlBOX_VIEW_EMAIL_REQUEST",
+    "contentClazz": "MailboxEmailViewRequestMessageContent"
+  },
+  {
+    "name": "MAILBOX_EMAIL_VIEW_REQUEST_TIPS",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EMAIlBOX_VIEW_EMAIL_REQUEST_TIPS",
+    "contentClazz": "MailboxRequestDecisionMessageContent"
+  },
+  {
+    "name": "POI_SHARE_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "POI_SHARE_MSG",
+    "contentClazz": "PoiShareMsgMessageContent"
+  },
+  {
+    "name": "ORG_ALLMEMBER_INVITE_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "ORG_ALLMEMBER_INVITE_MSG",
+    "contentClazz": "OrgAllMemberGroupMessageContent"
+  },
+  {
+    "name": "EDU_CUSTOMER_INVITED_TEACHER_JOIN_ORG_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_CUSTOMER_INVITED_TEACHER_JOIN_ORG_CARD",
+    "contentClazz": "EduInvitedTeacherJoinOrgContent"
+  },
+  {
+    "name": "EDU_CHOOSE_TYPE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_CHOOSE_TYPE",
+    "contentClazz": "EduChooseTypeMessageContent"
+  },
+  {
+    "name": "EDU_INVITE_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_INVITE_MSG",
+    "contentClazz": "EduInviteMessageContent"
+  },
+  {
+    "name": "EDU_INVITE_STUDENT_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_INVITE_STUDENT",
+    "contentClazz": "EduStudentInviteMessageContent"
+  },
+  {
+    "name": "EDU_INVITE_STUDENT_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_CLASS_INVITE_STUDENT",
+    "contentClazz": "EduClassInviteStudentMessageContent"
+  },
+  {
+    "name": "EDU_INVITATION",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_INVITATION",
+    "contentClazz": "EduInvitationMessageContent"
+  },
+  {
+    "name": "EDU_INVITATION_ACCEPT",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_ACCEPT",
+    "contentClazz": "EduInvitationMessageAcceptContent"
+  },
+  {
+    "name": "EDU_PLAN_SIGN",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_PLAN_SIGN",
+    "contentClazz": "EduInvitationMessageAcceptContent"
+  },
+  {
+    "name": "EDU_INVITATION_REFUSE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_REFUSE",
+    "contentClazz": "EduInvitationMessageRefuseContent"
+  },
+  {
+    "name": "EDU_INVITATION_REFUSE_REASON",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_INVITATION_REFUSE_REASON",
+    "contentClazz": "EduInvitationRefuseReasonCardContent"
+  },
+  {
+    "name": "EDU_INVITATION_CHANGE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_INVITATION_CHANGE",
+    "contentClazz": "EduInvitationChangeMessageContent"
+  },
+  {
+    "name": "EDU_INVITATION_CANCELED_INVITATION",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "EDU_INVITATION_CANCELED_INVITATION",
+    "contentClazz": "EduCancelInvitationMessageContent"
+  },
+  {
+    "name": "EDU_INVITATION_CANCEL",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_CANCEL",
+    "contentClazz": "EduCanceledMessageContent"
+  },
+  {
+    "name": "EDU_INVITATION_CANCEL_TO_FAMILY",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_CANCEL_TO_FAMILY",
+    "contentClazz": "EduInvitationMessageCancelToFamilyContent"
+  },
+  {
+    "name": "EDU_INVITATION_ACCEPT_TO_FAMILY",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_ACCEPT_TO_FAMILY",
+    "contentClazz": "EduInvitationMessageAcceptToFamilyContent"
+  },
+  {
+    "name": "EDU_MEMBER_CHANGE",
+    "flag": "PersistFlag.Transparent",
+    "typeEnum": "EDU_MEMBER_CHANGE",
+    "contentClazz": "EduInvitationMessageMemberChangeContent"
+  },
+  {
+    "name": "EDU_INVITATION_REFUSE_TO_FAMILY",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_REFUSE_TO_FAMILY",
+    "contentClazz": "EduInvitationMessageRefuseToFamilyContent"
+  },
+  {
+    "name": "exchangeRewardNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EXCHANGE_REWARD_MESSAGE",
+    "contentClazz": "ExchangeRewardNotification"
+  },
+  {
+    "name": "EDU_INVITATION_FROM_FAMILY_TO_FAMILY",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_FROM_FAMILY_TO_FAMILY",
+    "contentClazz": "EduInvitationMessageFromFamilyToFamilyContent"
+  },
+  {
+    "name": "EDU_FAMILY_BUY_COURSE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_FAMILY_BUY_COURSE",
+    "contentClazz": "EduFamilyBuyCourseContent"
+  },
+  {
+    "name": "EDU_INVITATION_EDIT_FROM_OTHER_TO_ORGANIZATION",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_INVITATION_EDIT_FROM_OTHER_TO_ORGANIZATION",
+    "contentClazz": "EduInvitationMessageEditFromOtherToOrganizationContent"
+  },
+  {
+    "name": "eduGroupRelatedFamilyNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_GROUP_RELATED_FAMILY",
+    "contentClazz": "EduGroupRelatedFamilyNotification"
+  },
+  {
+    "name": "EDU_ASK_LEAVE_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_ASK_LEAVE_TO_FAMILY",
+    "contentClazz": "EduAskLeaveToFamilyMessageContent"
+  },
+  {
+    "name": "EDU_ASK_LEAVE_TO_INSTITUTION",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_ASK_LEAVE_TO_INSTITUTION",
+    "contentClazz": "EduAskLeaveToInstitutionMessageContent"
+  },
+  {
+    "name": "EDU_ASK_LEAVE_CANCEL_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_ASK_LEAVE_CANCEL_TO_FAMILY",
+    "contentClazz": "EduAskLeaveCancelToFamilyMessageContent"
+  },
+  {
+    "name": "EDU_ASK_LEAVE_CANCEL_TO_INSTITUTION",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_ASK_LEAVE_CANCEL_TO_INSTITUTION",
+    "contentClazz": "EduAskLeaveCancelToInstitutionMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_APPLY_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_APPLY_TO_FAMILY",
+    "contentClazz": "EduMoveCoursesApplyMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_APPLY_TO_AGENCY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_APPLY_TO_AGENCY",
+    "contentClazz": "EduMoveCoursesApplyMessageContentToAgency"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_DONE_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_DONE_TO_FAMILY",
+    "contentClazz": "EduMoveCoursesDoneMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_DONE_TO_AGENCY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_DONE_TO_AGENCY",
+    "contentClazz": "EduMoveCoursesDoneToAgencyMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_REJECT_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_REJECT_TO_FAMILY",
+    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToFamily"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_REJECT_TO_AGENCY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_REJECT_TO_AGENCY",
+    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToAgency"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_SENDGROUPCHAT_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_MOVE_COURSES_SENDGROUPCHAT_CARD",
+    "contentClazz": "EduMoveCourseSendGroupChatCard"
+  },
+  {
+    "name": "EDU_GROUP_BOOK_COURSE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_GROUP_BOOK_COURSE",
+    "contentClazz": "EduGroupBookCourse"
+  },
+  {
+    "name": "EDU_UPLOAD_STYLE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_UPLOAD_STYLE",
+    "contentClazz": "EduUploadStyleMessageContent"
+  },
+  {
+    "name": "EDU_HOMEWORKE_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_HOMEWORKE_MSG",
+    "contentClazz": "EduHomeWorkeMsgMessageContent"
+  },
+  {
+    "name": "EDU_HOMEWORKE_SUBMIT_TO_AGENCY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_HOMEWORKE_SUBMIT_TO_AGENCY",
+    "contentClazz": "EduHomeWorkeSubmitToAgencyMessageContent"
+  },
+  {
+    "name": "EDU_HOMEWORKE_SUBMIT_TO_FAMILY",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_HOMEWORKE_SUBMIT_TO_FAMILY",
+    "contentClazz": "EduHomeWorkeSubmitToFamilyMessageContent"
+  },
+  {
+    "name": "EDU_SCORE_SUBMIT_MSG",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_SCORE_SUBMIT_MSG",
+    "contentClazz": "EduScoreSubmitMsgMessageContent"
+  },
+  {
+    "name": "EDU_COURSE_SHARE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_COURSE_SHARE_CARD",
+    "contentClazz": "EduCourseShareCardMessageContent"
+  },
+  {
+    "name": "EDU_HOMEWORKE_READ",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_HOMEWORKE_READ",
+    "contentClazz": "EduHomeWorkeSubmitReadMessageContent"
+  },
+  {
+    "name": "EDU_SCHEDULE_ACLASS",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_SCHEDULE_ACLASS",
+    "contentClazz": "EduScheduleAClassMessageContent"
+  },
+  {
+    "name": "EDU_COURSE_COMPLETE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_COURSE_COMPLETE",
+    "contentClazz": "EduCourseCompleteMessageContent"
+  },
+  {
+    "name": "EDU_PLAN_COMPLETE_CASE_UNSIGN",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_PLAN_COMPLETE_CASE_UNSIGN",
+    "contentClazz": "EduPlanCompleteCaseUnsignMessageContent"
+  },
+  {
+    "name": "EDU_STUDENT_JOIN_COURSE_PLAN",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_STUDENT_JOIN_COURSE_PLAN",
+    "contentClazz": "EduStudentJoinCoursePlanMessageContent"
+  },
+  {
+    "name": "EDU_TEACHER_JOIN_COURSE_PLAN",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_TEACHER_JOIN_COURSE_PLAN",
+    "contentClazz": "EduTeacherJoinCoursePlanMessageContent"
+  },
+  {
+    "name": "EDU_COURSE_PLAN_CREATED",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_COURSE_PLAN_CREATED",
+    "contentClazz": "EduCoursePlanCreatedMessageContent"
+  },
+  {
+    "name": "EDU_COURSE_PLAN_CREATED_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_COURSE_PLAN_CREATED_CARD",
+    "contentClazz": "EduCoursePlanCreatedCardMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_PLAN_CREATED",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_MOVE_COURSES_PLAN_CREATED",
+    "contentClazz": "EduMoveCoursesPlanCreatedMessageContent"
+  },
+  {
+    "name": "EDU_MOVE_COURSES_STUDENT_JOIN_PLAN",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "EDU_MOVE_COURSES_STUDENT_JOIN_PLAN",
+    "contentClazz": "EduMoveCoursesStudentJoinPlanMessageContent"
+  },
+  {
+    "name": "WorkManageTurnoverChange",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_TURNOVER_CHANGE",
+    "contentClazz": "WorkManageTurnoverChange"
+  },
+  {
+    "name": "workManageIntraGroupFlow",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_INTRA_GROUP_FLOW",
+    "contentClazz": "workManageIntraGroupFlow"
+  },
+  {
+    "name": "workManageReturnInGroupNotifications",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_RETURN_IN_GROUP_NOTIFICATIONS",
+    "contentClazz": "workManageReturnInGroupNotifications"
+  },
+  {
+    "name": "workManageReturnNoticeToSpecificPerson",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_RETURN_NOTICE_TO_SPECIFIC_PERSON",
+    "contentClazz": "workManageReturnNoticeToSpecificPerson"
+  },
+  {
+    "name": "workManagementNoticeApprovalStatus",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_NOTICE_APPROVAL_STATUS",
+    "contentClazz": "WorkManagementNoticeApprovalStatus"
+  },
+  {
+    "name": "orgGroupAddSuccessNotification",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "ORG_GROUP_INVITE_SUCCESS_VIEW_LIST",
+    "contentClazz": "OrgGroupAddSuccessNotification"
+  },
+  {
+    "name": "EDU_CUSTOMER_READY_TO_BUY_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "EDU_CUSTOMER_READY_TO_BUY_CARD",
+    "contentClazz": "EduCustomerReadyToBuyCardMessageContent"
+  },
+  {
+    "name": "JOIN_TENANT_APPLICATION_APPROVED",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "JOIN_TENANT_APPLICATION_APPROVED",
+    "contentClazz": "JoinTenantApplicationApproved"
+  },
+  {
+    "name": "Lynx_Card",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "Lynx_Card",
+    "contentClazz": "LynxMessageContent"
+  },
+  {
+    "name": "Lynx_Card_Update",
+    "flag": "PersistFlag.No_Persist",
+    "typeEnum": "Lynx_Card_Update",
+    "contentClazz": "LynxUpdateMessageContent"
+  },
+  {
+    "name": "IM_WORK_TASK_RESTART_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "IM_WORK_TASK_RESTART_NOTICE",
+    "contentClazz": "WorkManageRestartCardContent"
+  },
+  {
+    "name": "IM_WORK_TASK_RESTART_GROUP_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "IM_WORK_TASK_RESTART_GROUP_NOTICE",
+    "contentClazz": "WorkManageRestartGroupCardContent"
+  },
+  {
+    "name": "IM_FLOW_CARD_UPDATE_NOTICE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "IM_FLOW_DATA_UPDATE_NOTICE",
+    "contentClazz": "FlowDataUpdateNotification"
+  },
+  {
+    "name": "IM_FLOW_CARD_APPROVER_UPDATE_NOTICE",
+    "flag": "PersistFlag.Persist",
+    "typeEnum": "IM_FLOW_DATA_APPROVER_UPDATE_NOTICE",
+    "contentClazz": "FlowDataApproverUpdateNotificationContent"
+  },
+  {
+    "name": "OUTPUT_APPRAISE_EXECUTE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "OUTPUT_APPRAISE_EXECUTE",
+    "contentClazz": "WorkManagementOutputMessageContent"
+  },
+  {
+    "name": "TASK_EVALUATE_IM_PRIVATE_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "TASK_EVALUATE_IM_PRIVATE_NOTICE",
+    "contentClazz": "WorkManagementTaskEvaluate"
+  },
+  {
+    "name": "TASK_EVALUATE_REMIND_IM_PRIVATE_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "TASK_EVALUATE_REMIND_IM_PRIVATE_NOTICE",
+    "contentClazz": "WorkManagementTaskEvaluateRemind"
+  },
+  {
+    "name": "TASK_EVALUATE_COMPLETE_IM_GROUP_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "TASK_EVALUATE_COMPLETE_IM_GROUP_NOTICE",
+    "contentClazz": "WorkManagementGroupTaskEvaluate"
+  },
+  {
+    "name": "WORK_MANAGEMENT_EXECUTIVE_COMPLETE_NOTICE",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_COMPLETE_NOTICE",
+    "contentClazz": "WorkManagementExecutiveCompleteContent"
+  },
+  {
+    "name": "WORK_MANAGEMENT_EXECUTIVE_REMIND_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_REMIND_CARD",
+    "contentClazz": "WorkManagementExecutiveCbContent"
+  },
+  {
+    "name": "WORK_MANAGEMENT_EXECUTIVE_INVITE_CARD",
+    "flag": "PersistFlag.Persist_And_Count",
+    "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_INVITE_CARD",
+    "contentClazz": "WorkManagementExecutiveInviteContent"
+  }
+]

@@ -1,0 +1,1577 @@
+[
+  {
+    "name": "init",
+    "params": [
+      "args = []",
+      "{ appName = '' } = {}"
+    ],
+    "jsdoc": "/**\n     * 初始化，请参考本demo的用法\n     * 只可以在主窗口调用，其他窗口调用应当调用{@link attach}\n     * @param {[]} args，pc 时，传入[node实例]; web 时，可以传入Config配置对象，配置项，请参考{@link Config}\n     */"
+  },
+  {
+    "name": "getDataCopyFile",
+    "params": [
+      "userId",
+      "publicKey"
+    ],
+    "jsdoc": "/**\n     * 获取数据备份文件\n     * @returns\n     */"
+  },
+  {
+    "name": "delDataCopyFile",
+    "params": [
+      "copyFile"
+    ]
+  },
+  {
+    "name": "searchUserByNickName",
+    "params": [
+      "keyword"
+    ]
+  },
+  {
+    "name": "mergeCopyMessages",
+    "params": [
+      "copyFile",
+      "userId",
+      "publicKey"
+    ]
+  },
+  {
+    "name": "registerMessageContent",
+    "params": [
+      "name",
+      "flag",
+      "type",
+      "clazz"
+    ],
+    "jsdoc": "/**\n     * 注册新的自定义消息\n     *\n     * @param {string} name\n     * @param {number} flag 用来标识本消息是否需要存储、计数等，{@link PersistFlag}\n     * @param {number} type 消息类型，{@link MessageContentType}\n     * @param {class} clazz 消息对应的class\n     */"
+  },
+  {
+    "name": "getClientId",
+    "params": [],
+    "jsdoc": "/**\n     * 获取clientId，获取用户token时，一定要通过调用此方法获取clientId，否则会连接失败。\n     * @returns {string} clientId\n     */"
+  },
+  {
+    "name": "getProtoRevision",
+    "params": [],
+    "jsdoc": "/**\n     * 获取协议栈版本号\n     */"
+  },
+  {
+    "name": "useSM4",
+    "params": [],
+    "jsdoc": "/**\n     * 获取协议栈版本号\n     */\n    getProtoRevision() {\n        return impl.getProtoRevision();\n    }\n\n    /*\n     * 启用国密加密。注意需要服务器端同步开启国密配置\n     */"
+  },
+  {
+    "name": "setProxyInfo",
+    "params": [
+      "host",
+      "ip",
+      "port",
+      "username",
+      "password"
+    ],
+    "jsdoc": "/**\n     * 设置代理，只支持socks5代理\n     *\n     * @param {String} host       代理host，host和ip必须至少有一个。\n     * @param {String} ip         代理IP，host和ip必须至少有一个。\n     * @param {number} port       代理端口\n     * @param {String} username   username\n     * @param {String} password   password\n     */"
+  },
+  {
+    "name": "setDeviceToken",
+    "params": [
+      "pushType",
+      "token"
+    ],
+    "jsdoc": "/**\n     * 设置第三方推送设备token\n     * @param {number} pushType 推送类型，0-5 移动端已经使用了。\n     * @param {String} token 设备token\n     */"
+  },
+  {
+    "name": "disconnect",
+    "params": []
+  },
+  {
+    "name": "setPackageName",
+    "params": [
+      "packageName"
+    ]
+  },
+  {
+    "name": "getUserId",
+    "params": [],
+    "jsdoc": "/**\n     * 获取当前用户的id\n     * @returns {string} 当前用户的id\n     */"
+  },
+  {
+    "name": "setUserId",
+    "params": [
+      "userId"
+    ]
+  },
+  {
+    "name": "getServerDeltaTime",
+    "params": [],
+    "jsdoc": "/**\n     * 服务器时间和本地时间的差值\n     * @returns {number} 服务器时间和本地时间的差值\n     */"
+  },
+  {
+    "name": "screenShot",
+    "params": [],
+    "jsdoc": "/**\n     * 截图，\n     * @returns {string} 成功返回'done'，同时，图片保存到了系统剪贴板\n     */"
+  },
+  {
+    "name": "isLogin",
+    "params": [],
+    "jsdoc": "/**\n     * 是否成功登录\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getConnectionStatus",
+    "params": [],
+    "jsdoc": "/**\n     * 获取连接状态\n     * @returns {number} 连接状态，参考{@link ConnectionStatus}\n     */"
+  },
+  {
+    "name": "setBackupAddressStrategy",
+    "params": [
+      "strategy"
+    ],
+    "jsdoc": "/**\n     * 设置网络策略，仅专业版支持\n     * @param {int} strategy 网络策略。0 是自动选择；1 选择主网络；2选择备用网络\n     *\n     */"
+  },
+  {
+    "name": "setBackupAddress",
+    "params": [
+      "backupHost",
+      "backupPort"
+    ],
+    "jsdoc": "/**\n     * 设置备选网络信息，仅专业版支持\n     * @param {String} backupHost 备选网络主机地址\n     * @param {int} backupPort 备选网络主机端口\n     */"
+  },
+  {
+    "name": "setProtoUserAgent",
+    "params": [
+      "userAgent"
+    ],
+    "jsdoc": "/**\n     * 设置协议栈短连接UA。\n     *\n     * @param {string} userAgent 协议栈短连接使用的UA\n     */"
+  },
+  {
+    "name": "addHttpHeader",
+    "params": [
+      "header",
+      "value"
+    ],
+    "jsdoc": "/**\n     * 添加协议栈短连接自定义Header\n     *\n     * @param {string} header 协议栈短连接使用的UA\n     * @param {string} value 协议栈短连接使用的UA\n     */"
+  },
+  {
+    "name": "onAppResume",
+    "params": [],
+    "jsdoc": "/**\n     * 设备从睡眠中恢复\n     */"
+  },
+  {
+    "name": "onAppSuspend",
+    "params": [],
+    "jsdoc": "/**\n     * 设备进入睡眠状态\n     */"
+  },
+  {
+    "name": "getMyGroupList",
+    "params": [],
+    "jsdoc": "/**\n     * 已废弃，请使用{@link getFavGroupList}\n     * 获取我保存到通讯录的群组信息列表\n     * @returns {[GroupInfo]} 参考{@link GroupInfo}\n     */"
+  },
+  {
+    "name": "getFavGroupList",
+    "params": [],
+    "jsdoc": "/**\n     * 获取我保存到通讯录的群组信息列表\n     * @returns {[GroupInfo]} 参考{@link GroupInfo}\n     */"
+  },
+  {
+    "name": "getUserDisplayName",
+    "params": [
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 获取用户的displayName\n     * @param {string} userId 用户id\n     * @returns {string} 用户displayName\n     */"
+  },
+  {
+    "name": "if",
+    "params": [
+      "!userInfo"
+    ]
+  },
+  {
+    "name": "getGroupMemberDisplayName",
+    "params": [
+      "groupId",
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 获取用户在群里面的displayName\n     * @param {string} groupId 群id\n     * @param {string} userId 用户id\n     * @returns {string} 用户在群里面的displayName\n     */"
+  },
+  {
+    "name": "getUserInfo",
+    "params": [
+      "userId",
+      "refresh = false",
+      "groupId = ''"
+    ],
+    "jsdoc": "/**\n     * 获取用户信息\n     * @param {string} userId 用户id\n     * @param {boolean} refresh 是否刷新用户信息，如果刷新的话，且用户信息有更新，会通过{@link eventEmitter}进行通知，事件的名字是{@link EventType.UserInfosUpdate }\n     * @param {string} groupId\n     * @returns {UserInfo}\n     */"
+  },
+  {
+    "name": "getUserInfoEx",
+    "params": [
+      "userId",
+      "refresh",
+      "success",
+      "fail"
+    ],
+    "jsdoc": "/**\n     * 获取用户信息\n     * @param {string} userId 用户ID\n     * @param {boolean} refresh 是否强制从服务器更新，如果本地没有或者强制，会从服务器刷新\n     * @param {function (UserInfo)} success 成功回调，如果本地有该用户信息，则通过回调返回本地的用户信息；如果本地没有，则从服务端拉取该用户信息，并通过回调返回\n     * @param {function (number)} fail 失败回调\n     */"
+  },
+  {
+    "name": "getUserInfos",
+    "params": [
+      "userIds = []",
+      "groupId"
+    ],
+    "jsdoc": "/**\n     * 批量获取用户信息\n     * @param {[string]} userIds 用户ids\n     * @param {string} groupId 群组id\n     * @returns {[UserInfo]}\n     */"
+  },
+  {
+    "name": "searchFriends",
+    "params": [
+      "keyword"
+    ],
+    "jsdoc": "/**\n     * 本地搜索好友\n     * @param keyword 搜索关键字\n     * @returns {[UserInfo]}\n     */"
+  },
+  {
+    "name": "searchGroups",
+    "params": [
+      "keyword"
+    ],
+    "jsdoc": "/**\n     * 本地搜索群组\n     * @param keyword 搜索关键字\n     * @returns {[GroupSearchResult]}\n     */"
+  },
+  {
+    "name": "getIncommingFriendRequest",
+    "params": [],
+    "jsdoc": "/**\n     * 获取收到的好友请求\n     * @returns {[FriendRequest]}\n     */"
+  },
+  {
+    "name": "getOutgoingFriendRequest",
+    "params": [],
+    "jsdoc": "/**\n     * 获取发送出去的好友请求\n     * @returns {[FriendRequest]}\n     */"
+  },
+  {
+    "name": "getOneFriendRequest",
+    "params": [
+      "userId",
+      "incoming = true"
+    ],
+    "jsdoc": "/**\n     * 获取单条好友请求\n     * @param {string} userId 对方的用户id\n     * @param {boolean} incoming 是否是收到的好友请求\n     * @return {FriendRequest|null}\n     */"
+  },
+  {
+    "name": "loadFriendRequestFromRemote",
+    "params": [],
+    "jsdoc": "/**\n     * 从服务端加载好友请求，如果有更新，会通过{@link eventEmitter}通知\n     */"
+  },
+  {
+    "name": "getUnreadFriendRequestCount",
+    "params": [],
+    "jsdoc": "/**\n     * 获取未读的好友请求数\n     * @returns {number}\n     */"
+  },
+  {
+    "name": "clearUnreadFriendRequestStatus",
+    "params": [],
+    "jsdoc": "/**\n     * 清除好友请求未读状态\n     */"
+  },
+  {
+    "name": "isBlackListed",
+    "params": [
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 判断用户是否被加入了黑名单\n     * @param userId\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getBlackList",
+    "params": [],
+    "jsdoc": "/**\n     * 获取黑名单\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "setBlackList",
+    "params": [
+      "userId",
+      "block",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 设置黑名单\n     * @param {string} userId 用户id\n     * @param {boolean} block true，加入黑名单；false，移除黑名单\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "getMyFriendList",
+    "params": [
+      "fresh = false"
+    ],
+    "jsdoc": "/**\n     * 获取好友列表，返回的时好友id数组\n     * @param {boolean} fresh 是否刷新好友信息，如果刷新，且有更新的话，会通过{@link eventEmitter}通知\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "getFriendList",
+    "params": [
+      "fresh = false"
+    ],
+    "jsdoc": "/**\n     * 好友列表\n     * @returns {[Friend]}\n     */"
+  },
+  {
+    "name": "getFriendAlias",
+    "params": [
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 获取好友别名\n     * @param {string} userId\n     * @returns {string}\n     */"
+  },
+  {
+    "name": "getFriendExtra",
+    "params": [
+      "userId"
+    ]
+  },
+  {
+    "name": "getGroupInfo",
+    "params": [
+      "groupId",
+      "refresh = false"
+    ],
+    "jsdoc": "/**\n     * 获取群信息\n     * @param {string} groupId 群id\n     * @param {boolean} refresh 是否刷新，如果刷新，且有更新的话，会通过{@link eventEmitter}通知\n     * @returns {GroupInfo}\n     */"
+  },
+  {
+    "name": "getGroupInfos",
+    "params": [
+      "groupIds",
+      "refresh = false"
+    ],
+    "jsdoc": "/**\n     * 批量获取群信息\n     * @param {[string]} groupIds 群id\n     * @param {boolean} refresh 是否刷新，如果刷新，且有更新的话，会通过{@link eventEmitter}通知\n     * @returns {[GroupInfo]}\n     */"
+  },
+  {
+    "name": "getGroupInfoEx",
+    "params": [
+      "groupId",
+      "refresh = false",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取群信息\n     * @param {string} groupId 群id\n     * @param {boolean} refresh 是否刷新，如果刷新，且有更新的话，会通过{@link eventEmitter}通知\n     * @param {function (GroupInfo)} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "addGroupMembers",
+    "params": [
+      "groupId",
+      "memberIds",
+      "extra",
+      "notifyLines",
+      "notifyMessageContent",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 添加群成员\n     * @param  {string} groupId 群组id\n     * @param {[string]} memberIds 新添加的群成员id\n     * @param  {string} extra 群成员扩展信息\n     * @param {[number]} notifyLines\n     * @param {AddGroupMemberNotification} notifyMessageContent\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "getGroupMemberIds",
+    "params": [
+      "groupId",
+      "fresh = false"
+    ],
+    "jsdoc": "/**\n     * 获取群成员id列表\n     * @param {string} groupId 群id\n     * @param {boolean} fresh 是否刷新，刷新时，如果有更新，会通过{@link eventEmitter}通知\n     * @returns {[string]} 群成员用户id列表\n     */"
+  },
+  {
+    "name": "getGroupMembers",
+    "params": [
+      "groupId",
+      "fresh = false",
+      "isForceFetchAllDataEnabled = false"
+    ],
+    "jsdoc": "/**\n     * 获取群成员信息\n     * @param {string} groupId 群id\n     * @param {boolean} fresh 是否刷新\n     * @returns {[GroupMember]} 群成员信息\n     */"
+  },
+  {
+    "name": "getGroupMembersByType",
+    "params": [
+      "groupId",
+      "memberType"
+    ],
+    "jsdoc": "/**\n     * 根据群成员类型获取群成员列表\n     * @param {string} groupId\n     * @param {number} memberType，可选值参考{@link GroupMemberType}\n     * @return {[GroupMember]} 群成员列表\n     */"
+  },
+  {
+    "name": "getGroupMembersEx",
+    "params": [
+      "groupId",
+      "fresh = false",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取群成员信息\n     * @param {string} groupId 群id\n     * @param {boolean} fresh 是否强制从服务器更新，如果不刷新则从本地缓存中读取\n     * @param {function ([GroupMember])} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "getGroupMember",
+    "params": [
+      "groupId",
+      "memberId"
+    ],
+    "jsdoc": "/**\n     * 获取单个群成员信息\n     * @param {string} groupId 群id\n     * @param {string} memberId 群成员id\n     * @returns {GroupMember} 群成员信息\n     */"
+  },
+  {
+    "name": "kickoffGroupMembers",
+    "params": [
+      "groupId",
+      "memberIds",
+      "notifyLines",
+      "notifyMsg",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 将用户从群里移除\n     * @param {string} groupId 群id\n     * @param {[string]} memberIds 将要被移除的群成员id列表\n     * @param {[]} notifyLines 默认传[0]即可\n     * @param {KickoffGroupMemberNotification} notifyMsg 默认传null即可\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "muteGroupMembers",
+    "params": [
+      "groupId",
+      "isSet",
+      "memberIds = []",
+      "notifyLines = []",
+      "notifyMsg",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 对群成员禁言\n     * @param {string} groupId 群id\n     * @param {boolean} isSet true，禁言；false，取消禁言\n     * @param {[string]} memberIds 群成员id列表\n     * @param {[number]} notifyLines 默认传[0]即可\n     * @param {MessageContent} notifyMsg 默认传null即可\n     * @param {function ()} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "allowGroupMembers",
+    "params": [
+      "groupId",
+      "isSet",
+      "memberIds = []",
+      "notifyLines = []",
+      "notifyMsg",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 群全局禁言之后，允许白名单成员发言\n     * @param {string} groupId 群id\n     * @param {boolean} isSet true，加入白名单，允许发言；false，移除白名单，禁止发言\n     * @param {[string]} memberIds 群成员id列表\n     * @param {[number]} notifyLines 默认传[0]即可\n     * @param {MessageContent} notifyMsg 默认传null即可\n     * @param {function ()} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "transferGroup",
+    "params": [
+      "groupId",
+      "newOwner",
+      "lines",
+      "notifyMessageContent",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 转移群主\n     * @param {string} groupId 群id\n     * @param {string} newOwner 新群主的id\n     * @param lines\n     * @param notifyMessageContent\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "getGroupRemark",
+    "params": [
+      "groupId"
+    ],
+    "jsdoc": "/**\n     *  获取群备注\n     * @param {string} groupId 群id\n     * @return 群备注\n     */"
+  },
+  {
+    "name": "getFavGroups",
+    "params": [],
+    "jsdoc": "/**\n     * 获取保存到通讯录的群id列表\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "isFavGroup",
+    "params": [
+      "groupId"
+    ],
+    "jsdoc": "/**\n     *  判断群是否保存到了通讯录\n     * @param {string} groupId\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getUserSetting",
+    "params": [
+      "scope",
+      "key"
+    ],
+    "jsdoc": "/**\n     * 获取用户设置，保存格式可以理解为：scope + key => value\n     * @param {number} scope 命名空间，可选值参考{@link UserSettingScope}\n     * @param {string} key key\n     * @returns {string} 设置的key对应的value\n     */"
+  },
+  {
+    "name": "getUserSettings",
+    "params": [
+      "scope"
+    ],
+    "jsdoc": "/**\n     * 获取某个命名空间下的所有设置\n     * @param scope 命名空间，可选值参考{@link UserSettingScope}\n     * @returns {Map} key-value\n     */"
+  },
+  {
+    "name": "modifyMyInfo",
+    "params": [
+      "modifyMyInfoEntries",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 修改个人信息\n     * @param {[ModifyMyInfoEntry]} modifyMyInfoEntries 需要修改的信息列表，pc端，一次只允许修改一个项。\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "isGlobalSlient",
+    "params": [],
+    "jsdoc": "/**\n     * 是否全局免打扰\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "setGlobalSlient",
+    "params": [
+      "silent",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 设置全局免打扰\n     * @param {boolean} silent\n     * @param {function ()} successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "isHiddenNotificationDetail",
+    "params": [],
+    "jsdoc": "/**\n     * 是否隐藏通知详情\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "isHiddenGroupMemberName",
+    "params": [
+      "groupId"
+    ],
+    "jsdoc": "/**\n     * 是否隐藏群成员昵称\n     * @param {string} groupId 群id\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "createChannel",
+    "params": [
+      "name",
+      "portrait",
+      "desc",
+      "extra",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 创建频道\n     * @param {string} name 频道名称\n     * @param {string} portrait 频道头像的链接地址\n     * @param {string} desc 描述\n     * @param {string} extra 额外信息\n     * @param {function (string)} successCB 创建成功，会回调通知channelId\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "getChannelInfo",
+    "params": [
+      "channelId",
+      "refresh"
+    ],
+    "jsdoc": "/**\n     * 获取频道信息\n     * @param {string} channelId 频道id\n     * @param {boolean} refresh 是否强制刷新\n     * @returns {ChannelInfo|NullChannelInfo}\n     */"
+  },
+  {
+    "name": "getSecretChatInfo",
+    "params": [
+      "targetId"
+    ],
+    "jsdoc": "/**\n     * 获取密聊信息\n     * @param {string} targetId\n     * @returns {SecretChatInfo}\n     */"
+  },
+  {
+    "name": "destroySecretChat",
+    "params": [
+      "targetId",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "encodeSecretChatMediaData",
+    "params": [
+      "targetId",
+      "mediaDataBuffer"
+    ]
+  },
+  {
+    "name": "decodeSecretChatMediaData",
+    "params": [
+      "targetId",
+      "mediaDataBuffer"
+    ]
+  },
+  {
+    "name": "setSecretChatBurnTime",
+    "params": [
+      "targetId",
+      "ms"
+    ]
+  },
+  {
+    "name": "isEnableSecretChat",
+    "params": []
+  },
+  {
+    "name": "getAppPath",
+    "params": []
+  },
+  {
+    "name": "isUserEnableSecretChat",
+    "params": []
+  },
+  {
+    "name": "setUserEnableSecretChat",
+    "params": [
+      "enable",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "searchChannel",
+    "params": [
+      "keyword",
+      "fuzzy",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 搜索频道\n     * @param {string} keyword 关键字\n     * @param {boolean} fuzzy 是否模糊搜索\n     * @param {function (keyword, [ChannelInfo])} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "isListenedChannel",
+    "params": [
+      "channelId"
+    ],
+    "jsdoc": "/**\n     * 是否已收听/关注某个频道\n     * @param {string} channelId 频道id\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getMyChannels",
+    "params": [],
+    "jsdoc": "/**\n     * 获取自己创建的频道id列表\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "getListenedChannels",
+    "params": [],
+    "jsdoc": "/**\n     * 获取所收听的频道id列表\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "getRemoteListenedChannels",
+    "params": [
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 从服务端获取所收听的频道id列表\n     * @param {function([String])} successCB\n     * @param {function (number)} failCB\n     *\n     */"
+  },
+  {
+    "name": "getConversationList",
+    "params": [
+      "types",
+      "lines"
+    ],
+    "jsdoc": "/**\n     * 获取会话列表\n     * @param {number[]} types 想获取的会话类型，可选值参考{@link ConversationType}\n     * @param {[0]} lines 想获取哪些会话线路的会话，默认传[0]即可\n     * @returns {[ConversationInfo]}\n     */"
+  },
+  {
+    "name": "getConversationInfo",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     * 获取会话详情\n     * @param {Conversation} conversation\n     * @returns {ConversationInfo}\n     */"
+  },
+  {
+    "name": "searchConversation",
+    "params": [
+      "keyword",
+      "types = [0",
+      "1",
+      "2]",
+      "lines = [0",
+      "1",
+      "2]"
+    ],
+    "jsdoc": "/**\n     * 搜索会话\n     * @param {string} keyword 关键字\n     * @param {[number]} types 从哪些类型的会话中进行搜索，可选值可参考{@link ConversationType}\n     * @param {[number]} lines 从哪些会话线路进行搜索，默认传[0]即可\n     * @returns {[ConversationSearchResult]}\n     */"
+  },
+  {
+    "name": "setConversationTop",
+    "params": [
+      "conversation",
+      "top",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 会话置顶或取消置顶\n     * @param {Conversation} conversation 需要置顶或取消置顶的会话\n     * @param {int} top 置顶优先级\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "setConversationSlient",
+    "params": [
+      "conversation",
+      "silent",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 会话免打扰或取消免打扰\n     * @param {Conversation} conversation 目标会话\n     * @param {boolean} silent true，设置为免打扰；false，取消免打扰\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "setConversationDraft",
+    "params": [
+      "conversation",
+      "draft = ''"
+    ],
+    "jsdoc": "/**\n     * 保存会话草稿\n     * @param {Conversation} conversation 目标会话\n     * @param {string} draft 草稿，传''时，相当于清楚会话草稿\n     */"
+  },
+  {
+    "name": "setConversationTimestamp",
+    "params": [
+      "conversation",
+      "timestamp",
+      "syncRemote = false"
+    ],
+    "jsdoc": "/**\n     * 设置会话时间错，当会话不存在时，会创建一个新的会话。\n     * @param {Conversation} conversation\n     * @param {number} timestamp\n     * @param {boolean} syncRemote 是否同步到其他端\n     */"
+  },
+  {
+    "name": "getUnreadCount",
+    "params": [
+      "types = [0",
+      "1",
+      "2]",
+      "lines = [0]"
+    ],
+    "jsdoc": "/**\n     * 获取未读消息数\n     * @param {[number]} types 获取未读数时，包含哪些类型的会话，可选值参考{@link ConversationType}\n     * @param {[number]} lines 获取未读数时，包含哪些会话线路，默认传[0]即可\n     * @returns {UnreadCount}\n     */"
+  },
+  {
+    "name": "getConversationUnreadCount",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     * 获取某个会话的未读消息数\n     * @param {Conversation} conversation 目标会话\n     * @returns {UnreadCount}\n     */"
+  },
+  {
+    "name": "clearConversationUnreadStatus",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     * 清楚会话消息未读状态\n     * @param {Conversation} conversation 目标会话\n     */"
+  },
+  {
+    "name": "markConversationAsUnread",
+    "params": [
+      "conversation",
+      "syncToOtherClient"
+    ],
+    "jsdoc": "/**\n     * 将会话最后一条消息置为未读\n     * @param {Conversation} conversation 会话\n     * @param {boolean} syncToOtherClient 是否同步给其他端\n     * @return {boolean} 是否操作成功\n     */"
+  },
+  {
+    "name": "clearMessageUnreadStatus",
+    "params": [
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 清除单条消息的未读状态\n     * @param messageId\n     */"
+  },
+  {
+    "name": "clearAllUnreadStatus",
+    "params": [],
+    "jsdoc": "/**\n     * 清除所有消息的未读状态\n     *\n     * 特别注意1：本方法只清除了底层数据库中的未读状态，并未清理 UI 层会话列表中的未读状态，UI 层会话列表中的未读状态，需要手动重置。\n     * 特别注意2：本方法不会触发{@link ConversationInfoUpdate} 事件\n     */"
+  },
+  {
+    "name": "setMediaMessagePlayed",
+    "params": [
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 设置媒体消息的状态为已播放\n     * @param {number} messageId 消息id，不是消息uid!\n     */"
+  },
+  {
+    "name": "setMessageLocalExtra",
+    "params": [
+      "messageId",
+      "extra"
+    ],
+    "jsdoc": "/**\n     * 设置消息本地扩展信息\n     * @param {number} messageId 消息id，不是消息uid!\n     * @param {string} extra 扩展信息\n     */"
+  },
+  {
+    "name": "isMyFriend",
+    "params": [
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 判断是否是好友\n     * @param {string} userId 用户id\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getFavUsers",
+    "params": [],
+    "jsdoc": "/**\n     * 获取星标用户id列表\n     * @returns {[string]}\n     */"
+  },
+  {
+    "name": "isFavUser",
+    "params": [
+      "userId"
+    ],
+    "jsdoc": "/**\n     *  判断用户是否是星标用户\n     * @param {string} userId\n     * @returns {boolean}\n     */"
+  },
+  {
+    "name": "getMessages",
+    "params": [
+      "conversation",
+      "fromIndex = 0",
+      "before = true",
+      "count = 20",
+      "withUser = ''",
+      "contentTypes = []"
+    ],
+    "jsdoc": "/**\n     * 获取会话消息\n     * @param {Conversation} conversation 目标会话\n     * @param {number} fromIndex messageId，表示从那一条消息开始获取\n     * @param {boolean} before true, 获取fromIndex之前的消息，即更旧的消息；false，获取fromIndex之后的消息，即更新的消息。都不包含fromIndex对应的消息\n     * @param {number} count 获取多少条消息\n     * @param {string} withUser 只有会话类型为{@link ConversationType#Channel}时生效, channel主用来查询和某个用户的所有消息\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @return {[Message]} 会话消息列表，参考{@link Message}\n     */"
+  },
+  {
+    "name": "getMessagesEx2",
+    "params": [
+      "conversationTypes",
+      "lines",
+      "messageStatus",
+      "fromIndex = 0",
+      "before = true",
+      "count = 20",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     *\n     * @param {[number]} conversationTypes 会话类型列表，可选值参考{@link  ConversationType}\n     * @param {[number]} lines 会话线路列表\n     * @param {[number]} messageStatus 消息状态，可选值参考{@link MessageStatus}\n     * @param {number} fromIndex 本参数暂时无效! messageId，表示从那一条消息开始获取\n     * @param {boolean} before 本参数暂时无效! true, 获取fromIndex之前的消息，即更旧的消息；false，获取fromIndex之后的消息，即更新的消息。都不包含fromIndex对应的消息\n     * @param {number} count 本参数暂时无效! 获取多少条消息\n     * @param {string} withUser 只有会话类型为{@link ConversationType#Channel}时生效, channel主用来查询和某个用户的所有消息\n     * @return {[Message]} 会话消息列表，参考{@link Message}\n     */"
+  },
+  {
+    "name": "getMessagesByTimestamp",
+    "params": [
+      "conversation",
+      "contentTypes",
+      "timestamp",
+      "before = true",
+      "count = 20",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     * 获取会话消息\n     * @param {Conversation} conversation 目标会话\n     * @param {[number]} contentTypes 消息类型，可选值参考{@link MessageContentType}\n     * @param {number} timestamp 时间戳\n     * @param {boolean} before true, 获取timestamp之前的消息，即更旧的消息；false，获取timestamp之后的消息，即更新的消息。都不包含timestamp对应的消息\n     * @param {number} count 获取多少条消息\n     * @param {string} withUser 只有会话类型为{@link ConversationType#Channel}时生效, channel主用来查询和某个用户的所有消息\n     * @return {[Message]} 会话消息列表，参考{@link Message}\n     */"
+  },
+  {
+    "name": "getUserMessages",
+    "params": [
+      "userId",
+      "conversation",
+      "fromIndex",
+      "before = true",
+      "count = 20"
+    ],
+    "jsdoc": "/**\n     * 获取用户会话消息\n     * @param {string} userId 用户id\n     * @param {Conversation} conversation 目标会话\n     * @param {number} fromIndex 本参数暂时无效！ messageId，表示从那一条消息开始获取\n     * @param {boolean} before 本参数暂时无效！ true, 获取fromIndex之前的消息，即更旧的消息；false，获取fromIndex之后的消息，即更新的消息。都不包含fromIndex对应的消息\n     * @param {number} count 本参数暂时无效! 获取多少条消息\n     * @return\n     */"
+  },
+  {
+    "name": "getUserMessagesEx",
+    "params": [
+      "userId",
+      "conversationTypes",
+      "lines",
+      "fromIndex",
+      "before = true",
+      "count = 20",
+      "contentTypes = []"
+    ],
+    "jsdoc": "/**\n     * 获取用户消息\n     * @param {string} userId 用户id\n     * @param {[number]} conversationTypes 想获取的会话类型，可选值参考{@link ConversationType}\n     * @param {[0]} lines 想获取哪些会话线路的会话，默认传[0]即可\n     * @param {number} fromIndex 本参数暂时无效！ messageId，表示从那一条消息开始获取\n     * @param {boolean} before 本参数暂时无效！ true, 获取fromIndex之前的消息，即更旧的消息；false，获取fromIndex之后的消息，即更新的消息。都不包含fromIndex对应的消息\n     * @param {number} count 本参数暂时无效！ 获取多少条消息\n     * @param {[number]} contentTypes 消息类型，可选值参考{@link MessageContentType}\n     * @return\n     */"
+  },
+  {
+    "name": "getFirstUnreadMessageId",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     * 获取会话第一条未读消息的消息id\n     * @param {Conversation} conversation\n     * @return {number}\n     */"
+  },
+  {
+    "name": "loadRemoteMessages",
+    "params": [
+      "conversation",
+      "contentTypes",
+      "beforeUid",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 已废弃，请使用{@link loadRemoteConversationMessages}\n     * 获取会还的远程历史消息\n     * @param {Conversation} conversation 目标会话\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @param {number | Long} beforeUid 消息uid，表示拉取本条消息之前的消息\n     * @param {number} count\n     * @param {function (Message)} successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "loadRemoteConversationMessages",
+    "params": [
+      "conversation",
+      "contentTypes",
+      "beforeUid",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取会话的远程历史消息\n     * @param {Conversation} conversation 目标会话\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @param {number | Long} beforeUid 消息uid，表示拉取本条消息之前的消息\n     * @param {number} count\n     * @param {function ([Message])} successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "loadRemoteLineMessages",
+    "params": [
+      "line",
+      "contentTypes",
+      "beforeUid",
+      "count",
+      "filterLocalMessage",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 根据会话线路，获取远程历史消息，仅 web 端有效\n     * @param {number} line 会话线路\n     * @param {number | Long} beforeUid 消息uid，表示拉取本条消息之前的消息\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @param {number} count\n     * @param {boolean} filterLocalMessage 是否过滤本地已经存在的消息\n     * @param {function ([Message])} successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "loadRemoteMessage",
+    "params": [
+      "messageUid",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 根据消息 uid，获取远程消息\n     * @param {Long} messageUid 消息uid\n     * @param {function ([Message])} successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "getMessageById",
+    "params": [
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 获取消息\n     * @param {number} messageId 消息id\n     * @returns {null|Message}\n     */"
+  },
+  {
+    "name": "getMessageByUid",
+    "params": [
+      "messageUid"
+    ],
+    "jsdoc": "/**\n     * 获取消息\n     * @param {Long|string|number} messageUid\n     * @returns {null|Message}\n     */"
+  },
+  {
+    "name": "searchMessage",
+    "params": [
+      "conversation",
+      "keyword",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     * 搜索消息\n     * @param {Conversation} conversation 目标会话\n     * @param {string} keyword 关键字\n     * @param {string} withUser 目标用户\n     * @returns {[Message]}\n     */"
+  },
+  {
+    "name": "searchMessageEx",
+    "params": [
+      "conversation",
+      "keyword",
+      "desc",
+      "limit",
+      "offset",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     * 搜索消息\n     * @param {Conversation} conversation 目标会话，如果为空搜索所有会话\n     * @param {string} keyword 关键字\n     * @param {boolean} desc 逆序排列\n     * @param {int} limit 返回数量\n     * @param {int} offset 偏移\n     * @param {string} withUser 目标用户\n     * @returns {Message[]}\n     */"
+  },
+  {
+    "name": "searchMessageByTypes",
+    "params": [
+      "conversation",
+      "keyword",
+      "contentTypes",
+      "desc",
+      "limit",
+      "offset",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     * 搜索消息\n     * @param {Conversation} conversation 目标会话，如果为空搜索所有会话\n     * @param {string} keyword 关键字\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @param {boolean} desc 逆序排列\n     * @param {int} limit 返回数量\n     * @param {int} offset 偏移\n     * @param {string} withUser 目标用户\n     * @returns {Message[]}\n     */"
+  },
+  {
+    "name": "searchMessageEx2",
+    "params": [
+      "conversationTypes",
+      "lines",
+      "contentTypes",
+      "keyword",
+      "fromIndex",
+      "desc",
+      "count",
+      "withUser = ''"
+    ],
+    "jsdoc": "/**\n     * 搜索消息\n     * @param {[number]} conversationTypes 会话类型列表，可选值参考{@link  ConversationType}\n     * @param {[number]} lines 会话线路列表\n     * @param {[number]} contentTypes 消息类型列表，可选值参考{@link MessageContentType}\n     * @param {string} keyword 关键字\n     * @param {number} fromIndex messageId，表示从那一条消息开始获取\n     * @param {boolean} desc 逆序排列\n     * @param {number} count 最大数量\n     * @param {string} withUser 目标用户\n     * @returns {[Message]}\n     */"
+  },
+  {
+    "name": "cancelSendingMessage",
+    "params": [
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 取消发送消息，仅媒体类消息可以取消\n     * @param messageId 消息ID\n     * @returns 是否取消成功\n     */"
+  },
+  {
+    "name": "deleteMessage",
+    "params": [
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 删除消息\n     * @param {number} messageId 消息id\n     * @returns {*}\n     */"
+  },
+  {
+    "name": "batchDeleteMessages",
+    "params": [
+      "messageUids"
+    ],
+    "jsdoc": "/**\n     * 批量删除本地消息\n     * @param {[string]} messageUids 消息uid列表\n     * @returns {*}\n     */"
+  },
+  {
+    "name": "deleteRemoteMessageByUid",
+    "params": [
+      "msgUid",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 删除远程消息\n     * @param {Long | string} msgUid 消息uid\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "updateRemoteMessageContent",
+    "params": [
+      "msgUid",
+      "messageContent",
+      "distribute",
+      "updateLocal",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 更新远程消息消息内容，只有专业版支持。客户端仅能更新自己发送的消息，更新的消息类型不能变，更新的消息类型是服务配置允许更新的内容。Server API更新则没有限制。\n     * @param {Long | string} msgUid 消息uid\n     * @param {MessageContent} messageContent 具体的消息内容，一定要求是{@link MessageContent} 的子类，不能是普通的object\n     * @param {boolean} distribute 是否重新分发给其他客户端\n     * @param {boolean} updateLocal 是否更新本地消息内容\n     * @param {function ()} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "clearAllMessages",
+    "params": [
+      "removeConversation"
+    ],
+    "jsdoc": "/**\n     * 清除所有消息\n     * @param {boolean} removeConversation 是否同时删除会话\n     */"
+  },
+  {
+    "name": "insertMessage",
+    "params": [
+      "conversation",
+      "messageContent",
+      "status",
+      "notify = false",
+      "serverTime = 0"
+    ],
+    "jsdoc": "/**\n     * 插入消息\n     * @param {Conversation} conversation 目标会话\n     * @param {MessageContent} messageContent 具体的消息内容，一定要求是{@link MessageContent} 的子类，不能是普通的object\n     * @param {number} status 消息状态，可选值参考{@link MessageStatus}\n     * @param {boolean} notify 是否触发onReceiveMessage\n     * @param {Number} serverTime 服务器时间，精度到毫秒\n     *\n     * @return {Message} 插入的消息\n     */"
+  },
+  {
+    "name": "insertMessageEx",
+    "params": [
+      "messageUid",
+      "conversation",
+      "fromUser",
+      "messageContent",
+      "status",
+      "serverTime",
+      "localExtra"
+    ],
+    "jsdoc": "/**\n     * 插入消息\n     * @param {Long} messageUid\n     * @param {Conversation} conversation 目标会话\n     * @param {string} fromUser 发送者\n     * @param {MessageContent} messageContent 具体的消息内容，一定要求是{@link MessageContent} 的子类，不能是普通的object\n     * @param {number} status 消息状态，可选值参考{@link MessageStatus}\n     * @param {Number} serverTime 服务器时间，精度到毫秒\n     * @param {string} localExtra 附加信息\n     *\n     * @return {Message} 插入的消息\n     */"
+  },
+  {
+    "name": "getVersion",
+    "params": []
+  },
+  {
+    "name": "getSDKVersion",
+    "params": []
+  },
+  {
+    "name": "getAuthorizedMediaUrl",
+    "params": [
+      "messageUid",
+      "mediaType",
+      "mediaPath",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取经过认证的下载地址。\n     */"
+  },
+  {
+    "name": "isSupportBigFilesUpload",
+    "params": [],
+    "jsdoc": "/**\n     * 是否支持上传大文件上传。只有专业版才支持此功能。当支持大文件上传时，调用getUploadMediaUrl获取上传url，然后在应用层上传\n     */"
+  },
+  {
+    "name": "getUploadMediaUrl",
+    "params": [
+      "fileName",
+      "mediaType",
+      "contentType",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取上传链接。一般用户大文件上传。\n     * @param {string} fileName\n     * @param {number} mediaType 媒体类型，可选值参考{@link MessageContentMediaType}\n     * @param {string} contentType HTTP请求的ContentType header，为空时默认为\"application/octet-stream\"\n     * @param {function (string, string)} successCB 回调通知上传成功之后的url\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "onForeground",
+    "params": [],
+    "jsdoc": "/**\n     * 微信小程序切到前台时调用应用切到了前台\n     *\n     */"
+  },
+  {
+    "name": "isReceiptEnabled",
+    "params": [],
+    "jsdoc": "/**\n     *\n     * 是否开启了已送达报告和已读报告功能\n     * @return {boolean}\n     */"
+  },
+  {
+    "name": "isUserReceiptEnabled",
+    "params": [],
+    "jsdoc": "/**\n     * 当前用户是否开启消息回执\n     * @return {boolean}\n     */"
+  },
+  {
+    "name": "isCommercialServer",
+    "params": [],
+    "jsdoc": "/**\n     * 判断是否是专业版IM服务\n     * @return {boolean}\n     */"
+  },
+  {
+    "name": "isGlobalDisableSyncDraft",
+    "params": [],
+    "jsdoc": "/**\n     * 判断是否应用禁止草稿同步\n     * @return {boolean}\n     */"
+  },
+  {
+    "name": "setDisableSyncDraft",
+    "params": [
+      "disable",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     *\n     * @param disable\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "isDisableSyncDraft",
+    "params": []
+  },
+  {
+    "name": "setUserEnableReceipt",
+    "params": [
+      "enable",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 设置当前用户是否开启消息回执\n     * @param enable\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "getConversationDelivery",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     *\n     * @param conversation\n     * @return {Map<string, Long>}\n     */"
+  },
+  {
+    "name": "getConversationRead",
+    "params": [
+      "conversation"
+    ],
+    "jsdoc": "/**\n     *\n     * @param conversation\n     * @return {Map<string, Long>}\n     */"
+  },
+  {
+    "name": "getConversationFileRecords",
+    "params": [
+      "conversation",
+      "fromUser",
+      "beforeMessageUid",
+      "order",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取会话中的文件记录\n     * @param {Conversation} conversation 会话\n     * @param {String} fromUser 来源用户\n     * @param {Long} beforeMessageUid 消息uid，表示获取此消息uid之前的文件记录\n     * @param {int} order 排序。0 按照时间逆序；1 按照时间顺序；2 按照大小逆序；3 按照大小顺序。\n     * @param {number} count 数量\n     * @param {function (FileRecord[])} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "getMyFileRecords",
+    "params": [
+      "beforeMessageUid",
+      "order",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 获取我发送的文件记录\n     * @param {Long} beforeMessageUid 消息uid，表示获取此消息uid之前的文件记录\n     * @param {int} order 排序。0 按照时间逆序；1 按照时间顺序；2 按照大小逆序；3 按照大小顺序。\n     * @param {number} count 数量\n     * @param {function (FileRecord[])} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "deleteFileRecord",
+    "params": [
+      "messageUid",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 删除文件记录\n     * @param {Long} messageUid 文件对应的消息的uid\n     * @param {function ()} successCB 成功回调\n     * @param {function (number)} failCB 失败回调\n     */"
+  },
+  {
+    "name": "searchFiles",
+    "params": [
+      "keyword",
+      "conversation",
+      "fromUser",
+      "beforeMessageId",
+      "order",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 搜索远程文件记录\n     * @param {string} keyword\n     * @param {Conversation} conversation 会话，如果为空则获取当前用户所有收到和发出的文件记录\n     * @param {string} fromUser 文件发送用户，如果为空则获取该用户发出的文件记录\n     * @param {Long | string} beforeMessageId 起始消息的消息id\n     * @param {int} order 排序。0 按照时间逆序；1 按照时间顺序；2 按照大小逆序；3 按照大小顺序。\n     * @param {number} count\n     * @param {function (FileRecord[])} successCB\n     * @param {function (number)} failCB\n     */"
+  },
+  {
+    "name": "searchMyFiles",
+    "params": [
+      "keyword",
+      "beforeMessageUid",
+      "order",
+      "count",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 搜索我自己的远程文件记录\n     * @param keyword\n     * @param beforeMessageUid\n     * @param {int} order 排序。0 按照时间逆序；1 按照时间顺序；2 按照大小逆序；3 按照大小顺序。\n     * @param count\n     * @param successCB\n     * @param failCB\n     */"
+  },
+  {
+    "name": "getHost",
+    "params": [],
+    "jsdoc": "/**\n     * 获取host\n     */"
+  },
+  {
+    "name": "getEncodedClientId",
+    "params": []
+  },
+  {
+    "name": "encodeData",
+    "params": [
+      "data"
+    ],
+    "jsdoc": "/**\n     *\n     * @param {string} data 将要编码的数据\n     * @returns {string} 编码结果，base64格式\n     */"
+  },
+  {
+    "name": "decodeData",
+    "params": [
+      "encodedData"
+    ],
+    "jsdoc": "/**\n     *\n     * @param {string} encodedData 将要解码的数据，base64格式\n     * @returns {null | string} 解码之后的数据\n     */"
+  },
+  {
+    "name": "sendConferenceRequest",
+    "params": [
+      "sessionId",
+      "roomId",
+      "request",
+      "data",
+      "callback"
+    ],
+    "jsdoc": "/**\n     * 发送会议相关请求\n     * @param sessionId\n     * @param roomId\n     * @param request\n     * @param data\n     * @param callback\n     */"
+  },
+  {
+    "name": "sendConferenceRequestEx",
+    "params": [
+      "sessionId",
+      "roomId",
+      "request",
+      "data",
+      "advance",
+      "callback"
+    ]
+  },
+  {
+    "name": "isUserOnlineStateEnabled",
+    "params": []
+  },
+  {
+    "name": "watchOnlineState",
+    "params": [
+      "type",
+      "targets",
+      "duration",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     *\n     * @param {number} type 会话类型， 支持{@link ConversationType.Single}和{@link ConversationType.Group}\n     * @param {string[]} targets 会话类型为单聊时，是用户 id列表；会话类型为群组时，是群组 id 列表\n     * @param {number} duration 关注时间长度，单位是秒\n     * @param {function(UserOnlineState[])} successCB\n     * @param {function(number)} failCB\n     */"
+  },
+  {
+    "name": "unwatchOnlineState",
+    "params": [
+      "type",
+      "targets",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "setMyCustomState",
+    "params": [
+      "customState",
+      "customText",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "getAuthCode",
+    "params": [
+      "appId",
+      "appType",
+      "host",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "configApplication",
+    "params": [
+      "appId",
+      "appType",
+      "timestamp",
+      "nonceStr",
+      "signature",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "beginTransaction",
+    "params": []
+  },
+  {
+    "name": "commitTransaction",
+    "params": []
+  },
+  {
+    "name": "rollbackTransaction",
+    "params": []
+  },
+  {
+    "name": "requireLock",
+    "params": [
+      "lockId",
+      "duration",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "releaseLock",
+    "params": [
+      "lockId",
+      "successCB",
+      "failCB"
+    ]
+  },
+  {
+    "name": "_getStore",
+    "params": []
+  },
+  {
+    "name": "attach",
+    "params": [],
+    "jsdoc": "/**\n     * 内部使用，electron主窗口之外的，其他窗口调用，之后就可以使用wfc.js里面的所有接口了\n     */"
+  },
+  {
+    "name": "initRegisterDefaultMessage",
+    "params": []
+  },
+  {
+    "name": "utf8_to_b64",
+    "params": [
+      "str"
+    ],
+    "jsdoc": "/**\n     * utf8转base64\n     * @param {string} str\n     * @returns {string}\n     */"
+  },
+  {
+    "name": "b64_to_utf8",
+    "params": [
+      "str"
+    ],
+    "jsdoc": "/**\n     * base64转utf8\n     * @param {string} str\n     * @returns {string}\n     */"
+  },
+  {
+    "name": "b64_to_arrayBuffer",
+    "params": [
+      "str"
+    ]
+  },
+  {
+    "name": "for",
+    "params": [
+      "let i = 0; i < len; i++"
+    ]
+  },
+  {
+    "name": "arrayBuffer_to_b64",
+    "params": [
+      "data"
+    ]
+  },
+  {
+    "name": "unescape",
+    "params": [
+      "str"
+    ]
+  },
+  {
+    "name": "escape",
+    "params": [
+      "str"
+    ]
+  },
+  {
+    "name": "getUserDisplayNameEx",
+    "params": [
+      "userInfo"
+    ]
+  },
+  {
+    "name": "getGroupMemberDisplayNameEx",
+    "params": [
+      "userInfo"
+    ]
+  },
+  {
+    "name": "getWorkGroupMemberDisPlayName",
+    "params": [
+      "groupId",
+      "userId"
+    ],
+    "jsdoc": "/**\n     * 获取工作群的displayName\n     * @param {*} groupId 群id\n     * @param {*} userId 用户id\n     * @returns\n     */"
+  },
+  {
+    "name": "readMyMessagesDetail",
+    "params": [
+      "params"
+    ],
+    "jsdoc": "/**\n     * 我的消息已读详情\n     * @param {Object{mId string, userId string}} params\n     * @returns http://172.16.6.103:9005/project/927/interface/api/219464\n     */"
+  },
+  {
+    "name": "updateLocalMessageReadStatus",
+    "params": [
+      "msgs"
+    ],
+    "jsdoc": "/**\n     * 更新已经读过的数据到本地数据库\n     * 比如一些不需要判断是否已读的消息（eg：加入群之前的消息等）\n     * @param {Message} msgs\n     */"
+  },
+  {
+    "name": "getMyPrivateKey",
+    "params": []
+  },
+  {
+    "name": "getLocalPublicKey",
+    "params": [
+      "userId"
+    ]
+  },
+  {
+    "name": "getMyPublicKey",
+    "params": []
+  },
+  {
+    "name": "saveLocalPublicKey",
+    "params": [
+      "userId",
+      "data"
+    ]
+  },
+  {
+    "name": "saveLocalPublicKeys",
+    "params": [
+      "userId",
+      "data"
+    ]
+  },
+  {
+    "name": "saveMyPublicKey",
+    "params": [
+      "publicKey"
+    ]
+  },
+  {
+    "name": "setEncryptConfig",
+    "params": [
+      "config"
+    ],
+    "jsdoc": "/**\n     * 设置加解密信息\n     */"
+  },
+  {
+    "name": "setAuthInfo",
+    "params": [
+      "userId",
+      "token"
+    ],
+    "jsdoc": "/**\n     * 设置auth信息\n     * @param {*} userId\n     * @param {*} token\n     * @returns\n     */"
+  },
+  {
+    "name": "isRightCheckCode",
+    "params": [
+      "secretString",
+      "checkCode",
+      "publicKey"
+    ],
+    "jsdoc": "/**\n     * 验证码是否正确\n     * @param {*} secretString\n     * @param {*} checkCode\n     * @param {*} publicKey\n     * @returns\n     */"
+  },
+  {
+    "name": "encryptFileBasedOnPath",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid"
+    ],
+    "jsdoc": "/**\n     * 加密文件\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @returns\n     */"
+  },
+  {
+    "name": "decryptFileBasedOnPath",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid"
+    ],
+    "jsdoc": "/**\n     * 解密文件\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @returns\n     */"
+  },
+  {
+    "name": "encryptFileBasedOnPathAsync",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 加密文件(异步)\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @param {*} successCB\n     * @param {*} failCB\n     * @returns\n     */"
+  },
+  {
+    "name": "decryptFileBasedOnPathAsync",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid",
+      "successCB",
+      "failCB"
+    ],
+    "jsdoc": "/**\n     * 解密文件(异步)\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @param {*} successCB\n     * @param {*} failCB\n     * @returns\n     */"
+  },
+  {
+    "name": "encryptFileBasedOnPathAsyncV2",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid",
+      "uuid"
+    ],
+    "jsdoc": "/**\n     * 加密文件(异步)\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @param {*} uuid\n     * @returns\n     */"
+  },
+  {
+    "name": "decryptFileBasedOnPathAsyncV2",
+    "params": [
+      "filePath",
+      "outputPath",
+      "targetUid",
+      "messageId"
+    ],
+    "jsdoc": "/**\n     * 解密文件(异步)\n     * @param {*} filePath\n     * @param {*} outputPath\n     * @param {*} targetUid\n     * @param {*} messageId\n     * @returns\n     */"
+  },
+  {
+    "name": "exportMessages",
+    "params": [
+      "conversation",
+      "contentTypes = []"
+    ],
+    "jsdoc": "/**\n     * 获取会话所有的消息 导出使用\n     */"
+  },
+  {
+    "name": "getAnythingDB",
+    "params": [
+      "sql"
+    ]
+  },
+  {
+    "name": "getConversationListA",
+    "params": [
+      "types",
+      "lines"
+    ],
+    "jsdoc": "/**\n     * 获取会话列表-异步\n     * @param {number[]} types 想获取的会话类型，可选值参考{@link ConversationType}\n     * @param {[0]} lines 想获取哪些会话线路的会话，默认传[0]即可\n     * @returns {[ConversationInfo]}\n     */"
+  },
+  {
+    "name": "autoSyncGetLastTime",
+    "params": [],
+    "jsdoc": "/**\n     * @brief 获取数据库中最后一条消息的时间戳\n     *\n     * @return 0-没有消息时返回，>0-最后一条消息的时间戳\n     */"
+  },
+  {
+    "name": "autoSyncSetLastTime",
+    "params": [
+      "lastTime"
+    ],
+    "jsdoc": "/**\n     * @brief 设置最后时间戳\n     *\n     * @param 时间戳，通常在发送请求任务后，由服务端返回\n     */"
+  },
+  {
+    "name": "autoSyncMessageReconciliation",
+    "params": [
+      "idList",
+      "isLocal"
+    ],
+    "jsdoc": "/**\n     * @brief 消息列表对账\n     *\n     * 该接口用于将从服务端请求的消息 ID 列表和本地数据库中的消息进行对比，找出交集或差集的消息\n     *\n     * @param id_list 从服务端查询到的消息的 ID 列表\n     * @param result 服务端存在而本地数据库不存在的消息的 ID 列表\n     *\n     * @return 0-对账成功, 非0-错误码\n     */"
+  },
+  {
+    "name": "autoSyncDataPrepare",
+    "params": [
+      "idList",
+      "publicKey",
+      "version"
+    ],
+    "jsdoc": "/**\n     * @brief 加密数据文件准备\n     *\n     * 该接口中会根据提供的消息 ID 列表，从数据库中查询对应的消息，\n     * 将找到的消息保存到另一个数据库文件，并使用端对端加密逻辑对文件进行加密\n     *\n     * @param id_list 要查询的消息 id 列表\n     * @param public_key 端对端加密所需要的对端的公钥\n     * @param file_path 使用端对端加密后的数据库文件的全路径，local_ids 为空时此值也为空\n     *\n     * @return 0-数据准备成功，仅代表接口调用成功，并不表示是否能找到相应消息记录，非0-错误码\n     */"
+  },
+  {
+    "name": "autoSyncDataMerge",
+    "params": [
+      "filePath",
+      "publicKey"
+    ],
+    "jsdoc": "/**\n     * @brief 解密数据合并\n     *\n     * 该接口会通过传入的 public_key 使用端对端加密逻辑对传入的数据库文件进行解密，\n     * 并将其中的消息记录插入到本地数据库的消息表中\n     *\n     * @param file_path 从服务端下载的另一台设备准备的加密的数据库文件\n     * @param public_key 端对端加密所需要的对端的公钥\n     *\n     * @return 0-数据合并成功，非0-错误码\n     */"
+  },
+  {
+    "name": "OnNetworkChange",
+    "params": []
+  }
+]
