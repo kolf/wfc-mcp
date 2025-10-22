@@ -6,7 +6,7 @@
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc -p tsconfig.json",
-        "start": "node --loader ts-node/esm src/index.ts",
+        "start": "node dist/index.js",
         "dev": "node --loader ts-node/esm src/index.ts",
         "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts"
     },

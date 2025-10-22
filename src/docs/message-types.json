@@ -2,1537 +2,3585 @@
   {
     "name": "unknown",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "Unknown",
-    "contentClazz": "UnknownMessageContent"
+    "typeValue": 0,
+    "typeDescription": null,
+    "contentClazz": "UnknownMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/unknownMessageContent.js",
+    "classFileRelative": "unknownMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "text",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Text",
-    "contentClazz": "TextMessageContent"
+    "typeValue": 1,
+    "typeDescription": null,
+    "contentClazz": "TextMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/textMessageContent.js",
+    "classFileRelative": "textMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "ptext",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "P_Text",
-    "contentClazz": "PTextMessageContent"
+    "typeValue": 9,
+    "typeDescription": null,
+    "contentClazz": "PTextMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/ptextMessageContent.js",
+    "classFileRelative": "ptextMessageContent.js",
+    "extends": "TextMessageContent",
+    "jsdoc": null
   },
   {
     "name": "voice",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Voice",
-    "contentClazz": "SoundMessageContent"
+    "typeValue": 2,
+    "typeDescription": null,
+    "contentClazz": "SoundMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/soundMessageContent.js",
+    "classFileRelative": "soundMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "image",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Image",
-    "contentClazz": "ImageMessageContent"
+    "typeValue": 3,
+    "typeDescription": null,
+    "contentClazz": "ImageMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/imageMessageContent.js",
+    "classFileRelative": "imageMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "location",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Location",
-    "contentClazz": "LocationMessageContent"
+    "typeValue": 4,
+    "typeDescription": null,
+    "contentClazz": "LocationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/locationMessageContent.js",
+    "classFileRelative": "locationMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "file",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "File",
-    "contentClazz": "FileMessageContent"
+    "typeValue": 5,
+    "typeDescription": null,
+    "contentClazz": "FileMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/fileMessageContent.js",
+    "classFileRelative": "fileMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "video",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Video",
-    "contentClazz": "VideoMessageContent"
+    "typeValue": 6,
+    "typeDescription": null,
+    "contentClazz": "VideoMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/videoMessageContent.js",
+    "classFileRelative": "videoMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "sticker",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Sticker",
-    "contentClazz": "StickerMessageContent"
+    "typeValue": 7,
+    "typeDescription": null,
+    "contentClazz": "StickerMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/stickerMessageContent.js",
+    "classFileRelative": "stickerMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "link",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Link",
-    "contentClazz": "LinkMessageContent"
+    "typeValue": 8,
+    "typeDescription": null,
+    "contentClazz": "LinkMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/linkMessageContent.js",
+    "classFileRelative": "linkMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "userCard",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "UserCard",
-    "contentClazz": "CardMessageContent"
+    "typeValue": 10,
+    "typeDescription": null,
+    "contentClazz": "CardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/cardMessageContent.js",
+    "classFileRelative": "cardMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "compositeMessage",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Composite_Message",
-    "contentClazz": "CompositeMessageContent"
+    "typeValue": 11,
+    "typeDescription": null,
+    "contentClazz": "CompositeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/compositeMessageContent.js",
+    "classFileRelative": "compositeMessageContent.js",
+    "extends": "MediaMessageContent",
+    "jsdoc": null
   },
   {
     "name": "tip",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "Tip_Notification",
-    "contentClazz": "TipNotificationMessageContent"
+    "typeValue": 90,
+    "typeDescription": null,
+    "contentClazz": "TipNotificationMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "typing",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Typing",
-    "contentClazz": "TypingMessageContent"
+    "typeValue": 91,
+    "typeDescription": null,
+    "contentClazz": "TypingMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/typingMessageContent.js",
+    "classFileRelative": "typingMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "friendGreeting",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Friend_Added",
-    "contentClazz": "FriendGreetingNotification"
+    "typeValue": 93,
+    "typeDescription": null,
+    "contentClazz": "FriendGreetingNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "friendAdded",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Friend_Greeting",
-    "contentClazz": "FriendAddedNotification"
+    "typeValue": 92,
+    "typeDescription": null,
+    "contentClazz": "FriendAddedNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "addGroupMemberNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "AddGroupMember_Notification",
-    "contentClazz": "AddGroupMemberNotification"
+    "typeValue": 105,
+    "typeDescription": "/** 105: 添加群成员 */",
+    "contentClazz": "AddGroupMemberNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "changeGroupNameNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "ChangeGroupName_Notification",
-    "contentClazz": "ChangeGroupNameNotification"
+    "typeValue": 110,
+    "typeDescription": "/** 110: 修改群名 */",
+    "contentClazz": "ChangeGroupNameNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "changeGroupPortraitNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "ChangeGroupPortrait_Notification",
-    "contentClazz": "ChangeGroupPortraitNotification"
+    "typeValue": 112,
+    "typeDescription": "/** 112: 修改群头像 */",
+    "contentClazz": "ChangeGroupPortraitNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "createGroupNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CreateGroup_Notification",
-    "contentClazz": "CreateGroupNotification"
+    "typeValue": 104,
+    "typeDescription": "/** 104: 创建群组 */",
+    "contentClazz": "CreateGroupNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "dismissGroupNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "DismissGroup_Notification",
-    "contentClazz": "DismissGroupNotification"
+    "typeValue": 108,
+    "typeDescription": "/** 108: 解散群组 */",
+    "contentClazz": "DismissGroupNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "kickoffGroupMemberNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "KickOffGroupMember_Notification",
-    "contentClazz": "KickoffGroupMemberNotification"
+    "typeValue": 106,
+    "typeDescription": "/** 106: 踢出群成员 */",
+    "contentClazz": "KickoffGroupMemberNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "kickoffGroupMemberVisiableNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "KickOffGroupMember_Visible_Notification",
-    "contentClazz": "KickoffGroupMemberVisiableNotification"
+    "typeValue": 120,
+    "typeDescription": "/** 120: 踢出群成员的可见通知消息 */",
+    "contentClazz": "KickoffGroupMemberVisiableNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "modifyGroupAliasNotification",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "ModifyGroupAlias_Notification",
-    "contentClazz": "ModifyGroupAliasNotification"
+    "typeValue": 111,
+    "typeDescription": "/** 111: 群成员变更*/",
+    "contentClazz": "ModifyGroupAliasNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "modifyGroupExtraNotification",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "ModifyGroupExtra_Notification",
-    "contentClazz": "ModifyGroupExtraNotification"
+    "typeValue": 122,
+    "typeDescription": "/** 122: 修改群扩展信息 */",
+    "contentClazz": "ModifyGroupExtraNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "modifyGroupMemberExtraNotification",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "ModifyGroupMemberExtra_Notification",
-    "contentClazz": "ModifyGroupMemberExtraNotification"
+    "typeValue": 123,
+    "typeDescription": "/** 123: 修改群成员扩展信息 */",
+    "contentClazz": "ModifyGroupMemberExtraNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "quitGroupNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "QuitGroup_Notification",
-    "contentClazz": "QuitGroupNotification"
+    "typeValue": 107,
+    "typeDescription": "/** 107: 退出群组 */",
+    "contentClazz": "QuitGroupNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "quitGroupVisiableNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "QuitGroup_Visible_Notification",
-    "contentClazz": "QuitGroupVisiableNotification"
+    "typeValue": 121,
+    "typeDescription": "/** 121: 退群的可见通知消息 */",
+    "contentClazz": "QuitGroupVisiableNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "transferGroupOwnerNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "TransferGroupOwner_Notification",
-    "contentClazz": "TransferGroupOwnerNotification"
+    "typeValue": 109,
+    "typeDescription": "/** 109: 转让群主 */",
+    "contentClazz": "TransferGroupOwnerNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "groupJoinTypeNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "ChangeJoinType_Notification",
-    "contentClazz": "GroupJoinTypeNotificationContent"
+    "typeValue": 114,
+    "typeDescription": null,
+    "contentClazz": "GroupJoinTypeNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "groupMuteNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "MuteGroup_Notification",
-    "contentClazz": "GroupMuteNotificationContent"
+    "typeValue": 113,
+    "typeDescription": "/** 113: 消息免打扰 */",
+    "contentClazz": "GroupMuteNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "groupPrivateChatNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "ChangePrivateChat_Notification",
-    "contentClazz": "GroupPrivateChatNotificationContent"
+    "typeValue": 115,
+    "typeDescription": null,
+    "contentClazz": "GroupPrivateChatNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "groupSetManagerNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SetGroupManager_Notification",
-    "contentClazz": "GroupSetManagerNotificationContent"
+    "typeValue": 117,
+    "typeDescription": "/** 117: 设置群管理员 */",
+    "contentClazz": "GroupSetManagerNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "muteGroupMemberNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "MuteGroupMember_Notification",
-    "contentClazz": "MuteGroupMemberNotification"
+    "typeValue": 118,
+    "typeDescription": "/** 118: 禁言/取消禁言群成员的通知消息 */",
+    "contentClazz": "MuteGroupMemberNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "allowGroupMemberNotificationContent",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "AllowGroupMember_Notification",
-    "contentClazz": "AllowGroupMemberNotification"
+    "typeValue": 119,
+    "typeDescription": "/** 119: 全局禁言之后，允许群成员发言的通知消息 */",
+    "contentClazz": "AllowGroupMemberNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "recall",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "RecallMessage_Notification",
-    "contentClazz": "RecallMessageNotification"
+    "typeValue": 80,
+    "typeDescription": null,
+    "contentClazz": "RecallMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "delete",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "DeleteMessage_Notification",
-    "contentClazz": "DeleteMessageContent"
+    "typeValue": 81,
+    "typeDescription": null,
+    "contentClazz": "DeleteMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/deleteMessageContent.js",
+    "classFileRelative": "deleteMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "markUnreadMessage",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Mark_Unread_Sync",
-    "contentClazz": "MarkUnreadMessageContent"
+    "typeValue": 31,
+    "typeDescription": null,
+    "contentClazz": "MarkUnreadMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/markUnreadMessageContent.js",
+    "classFileRelative": "markUnreadMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "startSecretChat",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "StartSecretChat_Notification",
-    "contentClazz": "StartSecretChatNotification"
+    "typeValue": 40,
+    "typeDescription": null,
+    "contentClazz": "StartSecretChatNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "richNotification",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Rich_Notification",
-    "contentClazz": "RichNotificationMessageContent"
+    "typeValue": 12,
+    "typeDescription": null,
+    "contentClazz": "RichNotificationMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "articlesMessageContent",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Articles",
-    "contentClazz": "ArticlesMessageContent"
+    "typeValue": 13,
+    "typeDescription": null,
+    "contentClazz": "ArticlesMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/articlesMessageContent.js",
+    "classFileRelative": "articlesMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "channelMenuEventMessageContent",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Channel_Menu_Event",
-    "contentClazz": "ChannelMenuEventMessageContent"
+    "typeValue": 73,
+    "typeDescription": null,
+    "contentClazz": "ChannelMenuEventMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/channelMenuEventMessageContent.js",
+    "classFileRelative": "channelMenuEventMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "enterChannelChatMessageContent",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Enter_Channel_Chat",
-    "contentClazz": "EnterChannelChatMessageContent"
+    "typeValue": 71,
+    "typeDescription": null,
+    "contentClazz": "EnterChannelChatMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/enterChannelChatMessageContent.js",
+    "classFileRelative": "enterChannelChatMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "leaveChannelChatMessageContent",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Leave_Channel_Chat",
-    "contentClazz": "LeaveChannelChatMessageContent"
+    "typeValue": 72,
+    "typeDescription": null,
+    "contentClazz": "LeaveChannelChatMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/leaveChannelChatMessageContent.js",
+    "classFileRelative": "leaveChannelChatMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "privateImage",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Image_VV",
-    "contentClazz": "PrivateImageMessageContent"
+    "typeValue": 4007,
+    "typeDescription": null,
+    "contentClazz": "PrivateImageMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateImageMessageContent.js",
+    "classFileRelative": "privateImageMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "privateVideo",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Video_VV",
-    "contentClazz": "PrivateVideoMessageContent"
+    "typeValue": 4013,
+    "typeDescription": null,
+    "contentClazz": "PrivateVideoMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateVideoMessageContent.js",
+    "classFileRelative": "privateVideoMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "privateFile",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "File_VV",
-    "contentClazz": "PrivateFileMessageContent"
+    "typeValue": 4014,
+    "typeDescription": null,
+    "contentClazz": "PrivateFileMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateFileMessageContent.js",
+    "classFileRelative": "privateFileMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "webRecruitNotify",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Web_Recruit_VV",
-    "contentClazz": "PrivateWebRecruitMessageContent"
+    "typeValue": 3012,
+    "typeDescription": null,
+    "contentClazz": "PrivateWebRecruitMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateWebRecruitMessageContent.js",
+    "classFileRelative": "privateWebRecruitMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "App_Combine_Transmit_VV",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "App_Combine_Transmit_VV",
-    "contentClazz": "MergeMessageContent"
+    "typeValue": 4142,
+    "typeDescription": "/** 4142: 移动端合并转发消息 */",
+    "contentClazz": "MergeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mergeMessageContent.js",
+    "classFileRelative": "mergeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "App_Reply_VV",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "App_Reply_VV",
-    "contentClazz": "ReplyMessageContent"
+    "typeValue": 3001,
+    "typeDescription": "/** 3001: 移动端回复消息 */",
+    "contentClazz": "ReplyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/replyMessageContent.js",
+    "classFileRelative": "replyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CONTACT_CONTENT_TYPE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CONTACT_CONTENT_TYPE_CARD",
-    "contentClazz": "ContactCardMessageContent"
+    "typeValue": 3005,
+    "typeDescription": "/**  3005: 联系人名片/二维码 */",
+    "contentClazz": "ContactCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/contactCardMessageContent.js",
+    "classFileRelative": "contactCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CONTACT_QR_CODE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CONTACT_QR_CODE_CARD",
-    "contentClazz": "QrCodeCardMessageContent"
+    "typeValue": 3052,
+    "typeDescription": "/** 3052: 分享-个人有组织名片 */",
+    "contentClazz": "QrCodeCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/qrCodeCardMessageContent.js",
+    "classFileRelative": "qrCodeCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "GROUP_CONTACT_QR_CODE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "GROUP_CONTACT_QR_CODE_CARD",
-    "contentClazz": "GroupQRCodeCardMessageContent"
+    "typeValue": 3062,
+    "typeDescription": "/** 3062: 分享-群名片 */",
+    "contentClazz": "GroupQRCodeCardMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "READ_RECEIPT_PRECISE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "READ_RECEIPT_PRECISE",
-    "contentClazz": "ReadReceiptMessageContent"
+    "typeValue": 4016,
+    "typeDescription": "/** 4016: 精确已读回执 */",
+    "contentClazz": "ReadReceiptMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/readReceiptMessageContent.js",
+    "classFileRelative": "readReceiptMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "URGENT_MSG_PRECISE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "URGENT_MSG_PRECISE",
-    "contentClazz": "ReadUrgentMsgMessageContent"
+    "typeValue": 4204,
+    "typeDescription": "/** 4204: 加急消息已读通知 */",
+    "contentClazz": "ReadUrgentMsgMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/readUrgentMsgMessageContent.js",
+    "classFileRelative": "readUrgentMsgMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "READ_RECEIPT_INCREMENTAL",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "READ_RECEIPT_INCREMENTAL",
-    "contentClazz": "ReadReceiptIncrementalMessageContent"
+    "typeValue": 4017,
+    "typeDescription": "/** 4017: 增量已读通知 */",
+    "contentClazz": "ReadReceiptIncrementalMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/readReceiptIncrementalMessageContent.js",
+    "classFileRelative": "readReceiptIncrementalMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EMOJI_RECEIPT",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "EMOJI_RECEIPT",
-    "contentClazz": "EmojiReceiptMessageContent"
+    "typeValue": 4019,
+    "typeDescription": "/** 4019: 表情快捷回复 */",
+    "contentClazz": "EmojiReceiptMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/emojiReceiptMessageContent.js",
+    "classFileRelative": "emojiReceiptMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_NOT_HANDLE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_NOT_HANDLE",
-    "contentClazz": "CalendarNotHandleMessageContent"
+    "typeValue": 3036,
+    "typeDescription": "/** 3036: 日程暂不处理 */",
+    "contentClazz": "CalendarNotHandleMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarNotHandleMessageContent.js",
+    "classFileRelative": "calendarNotHandleMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_INVITATION",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CALENDAR_TYPE_INVITATION",
-    "contentClazz": "CalendarInvitationMessageContent"
+    "typeValue": 3022,
+    "typeDescription": "/** 3022: 日程邀约 */",
+    "contentClazz": "CalendarInvitationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarInvitationMessageContent.js",
+    "classFileRelative": "calendarInvitationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_INVITATION_NEW",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CALENDAR_TYPE_INVITATION_NEW",
-    "contentClazz": "CalendarInvitationMessageContentNew"
+    "typeValue": 3308,
+    "typeDescription": "/** 3308: 招聘日程邀约 */",
+    "contentClazz": "CalendarInvitationMessageContentNew",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarInvitationMessageContentNew.js",
+    "classFileRelative": "calendarInvitationMessageContentNew.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_ACCEPT",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_ACCEPT",
-    "contentClazz": "CalendarAcceptMessageContent"
+    "typeValue": 3023,
+    "typeDescription": "/** 3023: 接受日程 */",
+    "contentClazz": "CalendarAcceptMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarAcceptMessageContent.js",
+    "classFileRelative": "calendarAcceptMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_REFUSE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_REFUSE",
-    "contentClazz": "CalendarRefuseMessageContent"
+    "typeValue": 3024,
+    "typeDescription": "/** 3024: 拒绝日程 */",
+    "contentClazz": "CalendarRefuseMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarRefuseMessageContent.js",
+    "classFileRelative": "calendarRefuseMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_PENDING",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_PENDING",
-    "contentClazz": "CalendarPendingMessageContent"
+    "typeValue": 3025,
+    "typeDescription": "/** 3025: 待定日程 */",
+    "contentClazz": "CalendarPendingMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarPendingMessageContent.js",
+    "classFileRelative": "calendarPendingMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_REMIND",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_REMIND",
-    "contentClazz": "CalendarRemindMessageContent"
+    "typeValue": 3026,
+    "typeDescription": null,
+    "contentClazz": "CalendarRemindMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarRemindMessageContent.js",
+    "classFileRelative": "calendarRemindMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CANCELED",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CANCELED",
-    "contentClazz": "CalendarCanceledMessageContent"
+    "typeValue": 3027,
+    "typeDescription": "/** 3027: 日程已取消 */",
+    "contentClazz": "CalendarCanceledMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarCanceledMessageContent.js",
+    "classFileRelative": "calendarCanceledMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CHANGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CHANGE",
-    "contentClazz": "CalendarChangeMessageContent"
+    "typeValue": 3028,
+    "typeDescription": "/** 3028: 日程修改时间 */",
+    "contentClazz": "CalendarChangeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarChangeMessageContent.js",
+    "classFileRelative": "calendarChangeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CHANGE_NEW",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CHANGE_NEW",
-    "contentClazz": "CalendarChangeMessageContentNew"
+    "typeValue": 3309,
+    "typeDescription": "/** 3309: 招聘日程修改时间 */",
+    "contentClazz": "CalendarChangeMessageContentNew",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarChangeMessageContentNew.js",
+    "classFileRelative": "calendarChangeMessageContentNew.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CONFLICT",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CONFLICT",
-    "contentClazz": "CalendarConflictMessageContent"
+    "typeValue": 3029,
+    "typeDescription": null,
+    "contentClazz": "CalendarConflictMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarConflictMessageContent.js",
+    "classFileRelative": "calendarConflictMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_REMIND_INVITATION",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_REMIND_INVITATION",
-    "contentClazz": "CalendarRemindInvitationMessageContent"
+    "typeValue": 3032,
+    "typeDescription": "/** 3032: 日程邀请提醒，不显示IM消息 */",
+    "contentClazz": "CalendarRemindInvitationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarRemindInvitationMessageContent.js",
+    "classFileRelative": "calendarRemindInvitationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_REMIND_CANCELED",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_REMIND_CANCELED",
-    "contentClazz": "CalendarRemindCanceledMessageContent"
+    "typeValue": 3033,
+    "typeDescription": "/** 3033: 日程已取消提醒，不显示IM消息 */",
+    "contentClazz": "CalendarRemindCanceledMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarRemindCanceledMessageContent.js",
+    "classFileRelative": "calendarRemindCanceledMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CLOSE_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CLOSE_NOTICE",
-    "contentClazz": "CalendarCloseNoticeMessageContent"
+    "typeValue": 3038,
+    "typeDescription": "/** 3038: 日程提醒关闭弹窗通知 */",
+    "contentClazz": "CalendarCloseNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarCloseNoticeMessageContent.js",
+    "classFileRelative": "calendarCloseNoticeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_CANCEL_INVITATION",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CALENDAR_TYPE_CANCEL_INVITATION",
-    "contentClazz": "CalendarCancelInvitationMessageContent"
+    "typeValue": 3034,
+    "typeDescription": "/** 3034: 日程取消邀约 */",
+    "contentClazz": "CalendarCancelInvitationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarCancelInvitationMessageContent.js",
+    "classFileRelative": "calendarCancelInvitationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CALENDAR_TYPE_REJECT_REASON",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "CALENDAR_TYPE_REJECT_REASON",
-    "contentClazz": "CalendarRejectReasonCardContent"
+    "typeValue": 3037,
+    "typeDescription": "/** 3037: 日程拒绝带原因消息 */",
+    "contentClazz": "CalendarRejectReasonCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/calendarRejectReasonCardContent.js",
+    "classFileRelative": "calendarRejectReasonCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "GROUP_CONTENT_TYPE_ANNOUNCEMENT",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "GROUP_CONTENT_TYPE_ANNOUNCEMENT",
-    "contentClazz": "GroupAnnouncementMessageContent"
+    "typeValue": 3014,
+    "typeDescription": "/** 3014: 群公告消息 */",
+    "contentClazz": "GroupAnnouncementMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/groupAnnouncementMessageContent.js",
+    "classFileRelative": "groupAnnouncementMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "GROUP_CONTENT_TYPE_TOP_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "GROUP_CONTENT_TYPE_TOP_NOTICE",
-    "contentClazz": "GroupTopNoticeMessageContent"
+    "typeValue": 3020,
+    "typeDescription": "/** 3020: 群消息置顶通知 */",
+    "contentClazz": "GroupTopNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/groupTopNoticeMessageContent.js",
+    "classFileRelative": "groupTopNoticeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "APPROVAL_CONTENT_TYPE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "APPROVAL_CONTENT_TYPE_CARD",
-    "contentClazz": "ApprovalCardMessageContent"
+    "typeValue": 3031,
+    "typeDescription": "/** 3031: 审批卡片 */",
+    "contentClazz": "ApprovalCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/approvalCardMessageContent.js",
+    "classFileRelative": "approvalCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "systemNotification",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "System_Notification",
-    "contentClazz": "SystemNotificationMessageContent"
+    "typeValue": 3009,
+    "typeDescription": "/** 3009: 系统通知 */",
+    "contentClazz": "SystemNotificationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/systemNotificationMessageContent.js",
+    "classFileRelative": "systemNotificationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "tenantRobotNotification",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Tenant_Robot_Notification",
-    "contentClazz": "TenantRobotNotificationMessageContent"
+    "typeValue": 3030,
+    "typeDescription": "/** 3030: 租户机器人通知 */",
+    "contentClazz": "TenantRobotNotificationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/tenantRobotNotificationMessageContent.js",
+    "classFileRelative": "tenantRobotNotificationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "LINK_CONTENT_TYPE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "LINK_CONTENT_TYPE",
-    "contentClazz": "LinkUrlMessageContent"
+    "typeValue": 4018,
+    "typeDescription": "/** 4018: 链接消息类型 */",
+    "contentClazz": "LinkUrlMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/linkUrlMessageContent.js",
+    "classFileRelative": "linkUrlMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "LINK_MEETING_TYPE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "LINK_MEETING_TYPE",
-    "contentClazz": "LinkMeetingMessageContent"
+    "typeValue": 3049,
+    "typeDescription": "/** 3049: 会议链接消息类型 */",
+    "contentClazz": "LinkMeetingMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/linkMeetingMessageContent.js",
+    "classFileRelative": "linkMeetingMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "messageAssistantNotification",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Message_Assistant_Notification",
-    "contentClazz": "MessageAssistantNotificationMessageContent"
+    "typeValue": 3041,
+    "typeDescription": "/** 3041: 消息助手通知 */",
+    "contentClazz": "MessageAssistantNotificationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/messageAssistantNotificationMessageContent.js",
+    "classFileRelative": "messageAssistantNotificationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "privateVoice",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Voice_VV",
-    "contentClazz": "PrivateVoiceMessageContent"
+    "typeValue": 4020,
+    "typeDescription": "/** 4020: 新语音类型 */",
+    "contentClazz": "PrivateVoiceMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateVoiceMessageContent.js",
+    "classFileRelative": "privateVoiceMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "VOICE_VIDEO_CONTENT_TYPE_INVITE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "VOICE_VIDEO_CONTENT_TYPE_INVITE",
-    "contentClazz": "VoiceVideoCallMessageContent"
+    "typeValue": 3010,
+    "typeDescription": "/** 3010: 音视频通话 */",
+    "contentClazz": "VoiceVideoCallMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/voiceVideoCallMessageContent.js",
+    "classFileRelative": "voiceVideoCallMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "VOICE_VIDEO_CONTENT_TYPE_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "VOICE_VIDEO_CONTENT_TYPE_MESSAGE",
-    "contentClazz": "VoiceVideoCallMessageContentMessage"
+    "typeValue": 3011,
+    "typeDescription": "/** 3011: 音视频通话消息 */",
+    "contentClazz": "VoiceVideoCallMessageContentMessage",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/voiceVideoCallMessageContentMessage.js",
+    "classFileRelative": "voiceVideoCallMessageContentMessage.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "Forward_Work_Card",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Forward_Work_Card",
-    "contentClazz": "ForwardWorkCardMessageContent"
+    "typeValue": 3042,
+    "typeDescription": "/** 3042: 转发目标/项目/任务概览 */",
+    "contentClazz": "ForwardWorkCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/forwardWorkCardMessageContent.js",
+    "classFileRelative": "forwardWorkCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "Task_Card_Popup",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Task_Card_Popup",
-    "contentClazz": "TaskCardPopMessageContent"
+    "typeValue": 3050,
+    "typeDescription": "/** 3050: 待办提醒卡片消息通知 */",
+    "contentClazz": "TaskCardPopMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/taskCardPopMessageContent.js",
+    "classFileRelative": "taskCardPopMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "Close_Task_Card_Popup",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Close_Task_Card_Popup",
-    "contentClazz": "CloseTaskCardPopMessageContent"
+    "typeValue": 3051,
+    "typeDescription": "/** 3051: 待办提醒卡片关闭通知 */",
+    "contentClazz": "CloseTaskCardPopMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/closeTaskCardPopMessageContent.js",
+    "classFileRelative": "closeTaskCardPopMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "VOICE_VIDEO_BREAK_OFF_NOTIFICATION",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "VOICE_VIDEO_BREAK_OFF_NOTIFICATION",
-    "contentClazz": "VoiceVideoBreakOffMessageContent"
+    "typeValue": 3002,
+    "typeDescription": "/** 3002: 通话中断消息 */",
+    "contentClazz": "VoiceVideoBreakOffMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/voiceVideoBreakOffMessageContent.js",
+    "classFileRelative": "voiceVideoBreakOffMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "READ_VOICE_MESSAGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "READ_VOICE_MESSAGE",
-    "contentClazz": "ReadVoiceMessageContent"
+    "typeValue": 4022,
+    "typeDescription": "/** 4002: 语音消息已播消息 */",
+    "contentClazz": "ReadVoiceMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/readVoiceMessageContent.js",
+    "classFileRelative": "readVoiceMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MEETING_INVITING",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "MEETING_INVITING",
-    "contentClazz": "MeetingInviteMessageContent"
+    "typeValue": 3043,
+    "typeDescription": "/** 3043: 会议邀请卡片 */",
+    "contentClazz": "MeetingInviteMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/meetingInviteMessageContent.js",
+    "classFileRelative": "meetingInviteMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MEETING_INFO_UPDATE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MEETING_INFO_UPDATE",
-    "contentClazz": "MeetingInfoUpdateMessageContent"
+    "typeValue": 3047,
+    "typeDescription": "/** 3047: 会议信息变更 */",
+    "contentClazz": "MeetingInfoUpdateMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/meetingInfoUpdateMessageContent.js",
+    "classFileRelative": "meetingInfoUpdateMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MEETING_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MEETING_NOTICE",
-    "contentClazz": "MeetingNoticeMessageContent"
+    "typeValue": 3044,
+    "typeDescription": "/** 3044: 会议通知 */",
+    "contentClazz": "MeetingNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/meetingNoticeMessageContent.js",
+    "classFileRelative": "meetingNoticeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MSG_URGENT_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MSG_URGENT_NOTICE",
-    "contentClazz": "MsgUrgentNoticeMessageContent"
+    "typeValue": 4203,
+    "typeDescription": "/** 4203: 加急消息通知 */",
+    "contentClazz": "MsgUrgentNoticeMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "MEETING_RECORDING_NOTICE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MEETING_RECORDING_NOTICE",
-    "contentClazz": "MeetingRecordingMessageContent"
+    "typeValue": 3046,
+    "typeDescription": "/** 3046: 云录制通知 */",
+    "contentClazz": "MeetingRecordingMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/meetingRecordingMessageContent.js",
+    "classFileRelative": "meetingRecordingMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MESSAGE_CONTENT_TYPE_INTO_GROUP",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "MESSAGE_CONTENT_TYPE_INTO_GROUP",
-    "contentClazz": "MessageContentTypeIntoGroup"
+    "typeValue": 5001,
+    "typeDescription": "/** 5001: 工作群：管理员邀请进群 */",
+    "contentClazz": "MessageContentTypeIntoGroup",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/messageContentTypeIntoGroup.js",
+    "classFileRelative": "messageContentTypeIntoGroup.js",
+    "extends": "AddGroupMemberNotification",
+    "jsdoc": null
   },
   {
     "name": "MESSAGE_CONTENT_TYPE_TO_BE_OWNER",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "MESSAGE_CONTENT_TYPE_TO_BE_OWNER",
-    "contentClazz": "MessageContentTypeToBeOwner"
+    "typeValue": 5002,
+    "typeDescription": "/** 5002: 工作群：成为群主 */",
+    "contentClazz": "MessageContentTypeToBeOwner",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/messageContentTypeToBeOwner.js",
+    "classFileRelative": "messageContentTypeToBeOwner.js",
+    "extends": "TransferGroupOwnerNotification",
+    "jsdoc": null
   },
   {
     "name": "COMMON_CARD_SEND",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "COMMON_CARD_SEND",
-    "contentClazz": "CommonCardSendMessageContent"
+    "typeValue": 3053,
+    "typeDescription": "/** 3053: 通用卡片发送卡片（更新卡片）协议 */",
+    "contentClazz": "CommonCardSendMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "COMMON_CARD_CLOSE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "COMMON_CARD_CLOSE",
-    "contentClazz": "CommonCardCloseMessageContent"
+    "typeValue": 3054,
+    "typeDescription": "/** 3054: 通用卡片取消卡片协议 */",
+    "contentClazz": "CommonCardCloseMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "RICH_TEXT_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RICH_TEXT_MESSAGE",
-    "contentClazz": "PrivateRichTextMessageContent"
+    "typeValue": 4023,
+    "typeDescription": "/** 4023: 富文本消息 */",
+    "contentClazz": "PrivateRichTextMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateRichTextMessageContent.js",
+    "classFileRelative": "privateRichTextMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CREATE_GROUP_AVATAR_MESSAGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CREATE_GROUP_AVATAR_MESSAGE",
-    "contentClazz": "PrivateCreateGroupAvatarMessageContent"
+    "typeValue": 4024,
+    "typeDescription": "/** 4024: 创建群头像通知 */",
+    "contentClazz": "PrivateCreateGroupAvatarMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateCreateGroupAvatarMessageContent.js",
+    "classFileRelative": "privateCreateGroupAvatarMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "cancellationMemberNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CancellationMember_Notification",
-    "contentClazz": "CancellationMemberNotification"
+    "typeValue": 4021,
+    "typeDescription": null,
+    "contentClazz": "CancellationMemberNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "RECRUIT_TYPE_NOTICE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUIT_TYPE_NOTICE_MESSAGE",
-    "contentClazz": "RecruitTypeNoticeMessageContent"
+    "typeValue": 3067,
+    "typeDescription": "/** 3067: 筛选阶段消息通知 */",
+    "contentClazz": "RecruitTypeNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/recruitTypeNoticeMessageContent.js",
+    "classFileRelative": "recruitTypeNoticeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECRUIT_TYPE_NOTICE_MESSAGE_NEW",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUIT_TYPE_NOTICE_MESSAGE_NEW",
-    "contentClazz": "RecruitTypeNoticeMessageContentNew"
+    "typeValue": 3120,
+    "typeDescription": "/** 3120: 筛选阶段消息通知 */",
+    "contentClazz": "RecruitTypeNoticeMessageContentNew",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/recruitTypeNoticeMessageContentNew.js",
+    "classFileRelative": "recruitTypeNoticeMessageContentNew.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOB_INVITATION_TYPE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "JOB_INVITATION_TYPE_MESSAGE",
-    "contentClazz": "JobInvitationTypeMessageContent"
+    "typeValue": 3082,
+    "typeDescription": "/** 3082: 面试/录用阶段消息通知 */",
+    "contentClazz": "JobInvitationTypeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobInvitationTypeMessageContent.js",
+    "classFileRelative": "jobInvitationTypeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SHARE_RESUME_WITH_SELF",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "SHARE_RESUME_WITH_SELF",
-    "contentClazz": "JobInvitationShareMessageContent"
+    "typeValue": 3112,
+    "typeDescription": "/** 3112: 招聘分享简历 */",
+    "contentClazz": "JobInvitationShareMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobInvitationShareMessageContent.js",
+    "classFileRelative": "jobInvitationShareMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SHARE_EMAIL_RESUME_WITH_SELF",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "SHARE_EMAIL_RESUME_WITH_SELF",
-    "contentClazz": "jobInvitationShareEmailMessageContent"
+    "typeValue": 3121,
+    "typeDescription": "/** 3121: 招聘-邮件简历-分享简历 */",
+    "contentClazz": "jobInvitationShareEmailMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "JOB_INVITATION_TYPE_NOTICE_MESSAGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "JOB_INVITATION_TYPE_NOTICE_MESSAGE",
-    "contentClazz": "JobInvitationTypeNoticeMessageContent"
+    "typeValue": 3084,
+    "typeDescription": "/** 3084: 面试阶段刷新消息通知，不显示IM消息 */",
+    "contentClazz": "JobInvitationTypeNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobInvitationTypeNoticeMessageContent.js",
+    "classFileRelative": "jobInvitationTypeNoticeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECRUITMENT_APPROVED",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUITMENT_APPROVED",
-    "contentClazz": "RecruitmentApprovedContent"
+    "typeValue": 3098,
+    "typeDescription": "/** 3098: 招聘需求审批通过通知 */",
+    "contentClazz": "RecruitmentApprovedContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/recruitmentApprovedContent.js",
+    "classFileRelative": "recruitmentApprovedContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "TODO_SYSTEM_NOTICE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "TODO_SYSTEM_NOTICE",
-    "contentClazz": "TODOSystemNoticeMessageContent"
+    "typeValue": 3066,
+    "typeDescription": "/** 3066: 待办系统类型通知 */",
+    "contentClazz": "TODOSystemNoticeMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "TODO_SYSTEM_SUCCESS_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "TODO_SYSTEM_SUCCESS_NOTICE",
-    "contentClazz": "TODOSystemSuccessNoticeMessageContent"
+    "typeValue": 3068,
+    "typeDescription": "/** 3068: 待办系统类型完成通知 */",
+    "contentClazz": "TODOSystemSuccessNoticeMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "PERSONAL_FILE_CARD_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "PERSONAL_FILE_CARD_MESSAGE",
-    "contentClazz": "PersonalFileCardMessageContent"
+    "typeValue": 3080,
+    "typeDescription": "/** 3080: 完善个人档案卡片 */",
+    "contentClazz": "PersonalFileCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/personalFileCardMessageContent.js",
+    "classFileRelative": "personalFileCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "WORK_MANAGE_CARD_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGE_CARD",
-    "contentClazz": "WorkManageCardContent"
+    "typeValue": 3081,
+    "typeDescription": "/** 3081: 工作管理通知卡片 */",
+    "contentClazz": "WorkManageCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManageCardContent.js",
+    "classFileRelative": "workManageCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "jobInterestedMessage",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "JOB_CARD_SEEKER_MESSAGE",
-    "contentClazz": "JobCardSeekerMessageContent"
+    "typeValue": 3070,
+    "typeDescription": "/** 3070: 岗位卡片 - 求职者发起 */",
+    "contentClazz": "JobCardSeekerMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobCardSeekerMessageContent.js",
+    "classFileRelative": "jobCardSeekerMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOB_INTERESTED_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "JOB_INTERESTED_MESSAGE",
-    "contentClazz": "JobInterestedMessageNotification"
+    "typeValue": 3071,
+    "typeDescription": "/** 3071: 求职者感兴趣 */",
+    "contentClazz": "JobInterestedMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "SEND_VITAE_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SEND_VITAE_MESSAGE",
-    "contentClazz": "SendVitaeMessageNotification"
+    "typeValue": 3072,
+    "typeDescription": "/** 3072: 求职者投简历 */",
+    "contentClazz": "SendVitaeMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "VITAE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "VITAE_MESSAGE",
-    "contentClazz": "VitaeMessageContent"
+    "typeValue": 3073,
+    "typeDescription": "/** 3073: 求职者投简历(卡片) */",
+    "contentClazz": "VitaeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/vitaeMessageContent.js",
+    "classFileRelative": "vitaeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOB_CARD_EMPLOYER_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "JOB_CARD_EMPLOYER_MESSAGE",
-    "contentClazz": "JobCardEmployerMessageContent"
+    "typeValue": 3074,
+    "typeDescription": "/** 3074: 岗位卡片 - 招聘者发起 */",
+    "contentClazz": "JobCardEmployerMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobCardEmployerMessageContent.js",
+    "classFileRelative": "jobCardEmployerMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "REQUEST_VITAE_SEEKER_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "REQUEST_VITAE_SEEKER_MESSAGE",
-    "contentClazz": "RequestVitaeSeekerMessageContent"
+    "typeValue": 3075,
+    "typeDescription": "/** 3075: 招聘者求简历 求职者视角 */",
+    "contentClazz": "RequestVitaeSeekerMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/requestVitaeSeekerMessageContent.js",
+    "classFileRelative": "requestVitaeSeekerMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "REQUEST_VITAE_EMPLOYER_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "REQUEST_VITAE_EMPLOYER_MESSAGE",
-    "contentClazz": "RequestVitaeEmployerMessageNotification"
+    "typeValue": 3076,
+    "typeDescription": "/** 3076: 招聘者求简历 招聘者视角 */",
+    "contentClazz": "RequestVitaeEmployerMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "CONVERSATION_UPDATE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "CONVERSATION_UPDATE",
-    "contentClazz": "ConversationUpdateMessageNotification"
+    "typeValue": 3078,
+    "typeDescription": "/** 3078: 会话更新通知 */",
+    "contentClazz": "ConversationUpdateMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "TRANSFER_LEAVE_NOTICE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "TRANSFER_LEAVE_NOTICE",
-    "contentClazz": "TransferLeaveMessageNotification"
+    "typeValue": 3083,
+    "typeDescription": "/** 3083: 转岗离职通知消息 */",
+    "contentClazz": "TransferLeaveMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "FORWARD_WORK_PROJECT_OUTPUT_RISK",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "FORWARD_WORK_PROJECT_OUTPUT_RISK",
-    "contentClazz": "ForwardWorkProjectOutputRiskMessageContent"
+    "typeValue": 3048,
+    "typeDescription": "/** 3048: 项目产出/风险转发通知 */",
+    "contentClazz": "ForwardWorkProjectOutputRiskMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/forwardWorkProjectOutputRiskMessageContent.js",
+    "classFileRelative": "forwardWorkProjectOutputRiskMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECORDER_STATUS_SYNC_MESSAGE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "RECORDER_STATUS_SYNC_MESSAGE",
-    "contentClazz": "RecorderStatusSyncMessageContent"
+    "typeValue": 3012,
+    "typeDescription": "/** 3012: 录音组件消息通知 */",
+    "contentClazz": "RecorderStatusSyncMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/recorderStatusSyncMessageContent.js",
+    "classFileRelative": "recorderStatusSyncMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "USERINFO_UPDATE_MESSAGE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "USERINFO_UPDATE_MESSAGE",
-    "contentClazz": "PrivateUserInfoUpdateMessageContent"
+    "typeValue": 4026,
+    "typeDescription": null,
+    "contentClazz": "PrivateUserInfoUpdateMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateUserInfoUpdateMessage.js",
+    "classFileRelative": "privateUserInfoUpdateMessage.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "DOCUMENT_INVITE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "DOCUMENT_INVITE_CARD",
-    "contentClazz": "DocumentInviteCardMessageContent"
+    "typeValue": 4027,
+    "typeDescription": "/** 4027: 文档-协作邀请卡片 */",
+    "contentClazz": "DocumentInviteCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/documentInviteCardMessageContent.js",
+    "classFileRelative": "documentInviteCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "DOCUMENT_SHARE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "DOCUMENT_SHARE_CARD",
-    "contentClazz": "DocumentShareCardMessageContent"
+    "typeValue": 4028,
+    "typeDescription": "/** 4028: 文档分享IM */",
+    "contentClazz": "DocumentShareCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/documentShareCardMessageContent.js",
+    "classFileRelative": "documentShareCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "DOCUMENT_LINK_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "DOCUMENT_LINK_CARD",
-    "contentClazz": "DocumentLinkShareCardContent"
+    "typeValue": 4029,
+    "typeDescription": "/** 4029: 链接前端解析卡片 */",
+    "contentClazz": "DocumentLinkShareCardContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "DOCUMENT_AUTH_CHANGE_NOTICE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "DOCUMENT_AUTH_CHANGE_NOTICE",
-    "contentClazz": "DocumentAuthChangeNotifiCation"
+    "typeValue": 4030,
+    "typeDescription": "/** 4030: 文档权限变更通知 */",
+    "contentClazz": "DocumentAuthChangeNotifiCation",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "MICRO_DISK_STATUS_SYNC_MESSAGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MICRO_DISK_STATUS_SYNC_MESSAGE",
-    "contentClazz": "MicroDIskMessageContent"
+    "typeValue": 3069,
+    "typeDescription": "/** 3069: 微盘消息通知 MicroDIskMessageContent */",
+    "contentClazz": "MicroDIskMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/microDIskMessageContent.js",
+    "classFileRelative": "microDIskMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MUL_RTC_INVITE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "MUL_RTC_INVITE_CARD",
-    "contentClazz": "MulRtcInviteMessageContent"
+    "typeValue": 3015,
+    "typeDescription": "/** 3015: 多人音视频卡片 */",
+    "contentClazz": "MulRtcInviteMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mulRtcInviteMessageContent.js",
+    "classFileRelative": "mulRtcInviteMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "TODO_WORKFLOW_TODO_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "TODO_WORKFLOW_TODO_MESSAGE",
-    "contentClazz": "WorkFlowTodoMessageContent"
+    "typeValue": 3085,
+    "typeDescription": "/** 3085: 待办催办 */",
+    "contentClazz": "WorkFlowTodoMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workFlowTodoMessageContent.js",
+    "classFileRelative": "workFlowTodoMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "TODO_WORKFLOW_TODO_MESSAGE_UPDATE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "TODO_WORKFLOW_TODO_MESSAGE_UPDATE",
-    "contentClazz": "WorkFlowTodoMessageUpdateContent"
+    "typeValue": 3086,
+    "typeDescription": "/** 3086: 催办记录状态变更通知 */",
+    "contentClazz": "WorkFlowTodoMessageUpdateContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/WorkFlowTodoMessageUpdateContent.js",
+    "classFileRelative": "WorkFlowTodoMessageUpdateContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "COMPLEX_RICH_TEXT_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "COMPLEX_RICH_TEXT_MESSAGE",
-    "contentClazz": "ComplexRichTextMessageContent"
+    "typeValue": 4035,
+    "typeDescription": "/** 4035: 复杂的富文框消息 */",
+    "contentClazz": "ComplexRichTextMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/complexRichTextMessageContent.js",
+    "classFileRelative": "complexRichTextMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "STRANGER_NOTICE_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "STRANGER_NOTICE_MESSAGE",
-    "contentClazz": "StrangerNoticeMessageContent"
+    "typeValue": 2311,
+    "typeDescription": "/** 2311: 陌生人发送的系统消息提醒 */",
+    "contentClazz": "StrangerNoticeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/strangerNoticeMessageContent.js",
+    "classFileRelative": "strangerNoticeMessageContent.js",
+    "extends": "MessageContent",
+    "jsdoc": null
   },
   {
     "name": "VITAE_INVITATION_CARD_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "VITAE_INVITATION_CARD_MESSAGE",
-    "contentClazz": "VitaeInvitationCardMessageContent"
+    "typeValue": 3087,
+    "typeDescription": "/** 3087: 招聘请求简历卡片 */",
+    "contentClazz": "VitaeInvitationCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/vitaeInvitationCardMessageContent.js",
+    "classFileRelative": "vitaeInvitationCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOB_INTENTION_CARD_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "JOB_INTENTION_CARD_MESSAGE",
-    "contentClazz": "JobIntentionCardMessageContent"
+    "typeValue": 3093,
+    "typeDescription": "/** 3093: 求职意向卡片 招聘发起 双向 */",
+    "contentClazz": "JobIntentionCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobIntentionCardMessageContent.js",
+    "classFileRelative": "jobIntentionCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "UPDATE_JOB_INTENTION_STATUS_MESSAGE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "UPDATE_JOB_INTENTION_STATUS_MESSAGE",
-    "contentClazz": "UpdateJobIntentionStatusMessageContent"
+    "typeValue": 3094,
+    "typeDescription": "/** 3094: 求职意向状态更新 求职者发起 双向 */",
+    "contentClazz": "UpdateJobIntentionStatusMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/updateJobIntentionStatusMessageContent.js",
+    "classFileRelative": "updateJobIntentionStatusMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOB_CARD_BOTH_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "JOB_CARD_BOTH_MESSAGE",
-    "contentClazz": "JobCardBothMessageContent"
+    "typeValue": 3100,
+    "typeDescription": "/** 3100: 岗位卡片 - 招聘者发起  双方可见 */",
+    "contentClazz": "JobCardBothMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/jobCardBothMessageContent.js",
+    "classFileRelative": "jobCardBothMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "PRIVATE_VITAE_REQUEST_CARD_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "PRIVATE_VITAE_REQUEST_CARD_MESSAGE",
-    "contentClazz": "PrivateVitaeRequestCardMessageContent"
+    "typeValue": 3096,
+    "typeDescription": "/** 3096: 招聘请求简历意向卡片 招聘方发起 双向 */",
+    "contentClazz": "PrivateVitaeRequestCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/privateVitaeRequestCardMessageContent.js",
+    "classFileRelative": "privateVitaeRequestCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "PAY_ACCOUNT_CHANGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "PAY_ACCOUNT_CHANGE",
-    "contentClazz": "PayCardMessageContent"
+    "typeValue": 4032,
+    "typeDescription": "/** 4032: 支付中台-用户钱包账户变动红点提醒 */",
+    "contentClazz": "PayCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/payCardMessageContent.js",
+    "classFileRelative": "payCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "FEEDBACK_MANAGE_NOTICE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "FEEDBACK_MANAGE_NOTICE",
-    "contentClazz": "FeedbackManageCardContent"
+    "typeValue": 3089,
+    "typeDescription": "/** 3089: 工作管理-反馈管理卡片 */",
+    "contentClazz": "FeedbackManageCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/feedbackManageCardContent.js",
+    "classFileRelative": "feedbackManageCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "PUBLIC_VITAE_NOTICE_TO_RECRUITER",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "PUBLIC_VITAE_NOTICE_TO_RECRUITER",
-    "contentClazz": "PublicVitaeNoticeToRecruiterMessageContent"
+    "typeValue": 3095,
+    "typeDescription": "/** 3095: 招聘者拉取求职者公开简历的tips及简历 招聘方可见 */",
+    "contentClazz": "PublicVitaeNoticeToRecruiterMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/publicVitaeNoticeToRecruiterMessageContent.js",
+    "classFileRelative": "publicVitaeNoticeToRecruiterMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "PUBLIC_VITAE_NOTICE_TO_SEEKER",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "PUBLIC_VITAE_NOTICE_TO_SEEKER",
-    "contentClazz": "PublicVitaeNoticeToSeekerMessageContent"
+    "typeValue": 3097,
+    "typeDescription": "/** 3097: 招聘者拉取求职者公开简历的tips及卡片 求职者可见 */",
+    "contentClazz": "PublicVitaeNoticeToSeekerMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/publicVitaeNoticeToSeekerMessageContent.js",
+    "classFileRelative": "publicVitaeNoticeToSeekerMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECRUITMENT_APPROVED_NOTICE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUITMENT_APPROVED_MESSAGE",
-    "contentClazz": "RecruitmentApprovedMessageContent"
+    "typeValue": 3099,
+    "typeDescription": "/** 3099: 招聘需求拒绝或分配其他人 */",
+    "contentClazz": "RecruitmentApprovedMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "RECRUITMENT_REFUSE_REASON_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUITMENT_REFUSE_REASON",
-    "contentClazz": "RecruimentRejectReasobCardContent"
+    "typeValue": 3101,
+    "typeDescription": "/** 3101: 岗位拒绝带原因消息 */",
+    "contentClazz": "RecruimentRejectReasobCardContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "SCHEDULE_SUBCRIBE_AGREEORREFUSE_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SCHEDULE_SUBCRIBE_AGREEORREFUSE",
-    "contentClazz": "ScheduleSubcribeAgreeOrRefuseContent"
+    "typeValue": 3303,
+    "typeDescription": "/** 3303: 日程订阅同意/拒绝tip */",
+    "contentClazz": "ScheduleSubcribeAgreeOrRefuseContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "SCHEDULE_SUBCRIBE_UNBIND_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SCHEDULE_SUBCRIBE_UNBIND",
-    "contentClazz": "ScheduleSubcribeUnbindContent"
+    "typeValue": 3302,
+    "typeDescription": "/** 3102: 日程解除订阅tip */",
+    "contentClazz": "ScheduleSubcribeUnbindContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "SCHEDULE_SUBCRIBE_APPLY_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "SCHEDULE_SUBCRIBE_APPLY",
-    "contentClazz": "ScheduleSubcribeApplyContent"
+    "typeValue": 3300,
+    "typeDescription": "/** 3300: 日程订阅申请卡片*/",
+    "contentClazz": "ScheduleSubcribeApplyContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/scheduleSubcribeApplyContent.js",
+    "classFileRelative": "scheduleSubcribeApplyContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SCHEDULE_SUBCRIBE_NOFICATION_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "SCHEDULE_SUBCRIBE_MESSASGE",
-    "contentClazz": "ScheduleSubcribeMessageContent"
+    "typeValue": 3301,
+    "typeDescription": "/** 3301: 日程订阅提醒 */",
+    "contentClazz": "ScheduleSubcribeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/scheduleSubcribeMessageContent.js",
+    "classFileRelative": "scheduleSubcribeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SCHEDULE_SUBCRIBE_EXPIRED_MESSAGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "SCHEDULE_SUBCRIBE_EXPIRED",
-    "contentClazz": "ScheduleExpriedMessageContent"
+    "typeValue": 3304,
+    "typeDescription": "/** 3303:日程订阅失效通知 */",
+    "contentClazz": "ScheduleExpriedMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/scheduleSubcribeExpriedContent.js",
+    "classFileRelative": "scheduleSubcribeExpriedContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "FEEDBACK_HANDOVER_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "FEEDBACK_HANDOVER_NOTICE",
-    "contentClazz": "FeedbackHandoverCardContent"
+    "typeValue": 3110,
+    "typeDescription": "/** 3110: 工作管理-交接通知卡片 */",
+    "contentClazz": "FeedbackHandoverCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/feedbackHandoverCardContent.js",
+    "classFileRelative": "feedbackHandoverCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "CONTACTS_IGNORE_FRIEND_NOTICE",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CONTACTS_IGNORE_FRIEND_NOTICE",
-    "contentClazz": "ContactsIgnoreFriendContent"
+    "typeValue": 4036,
+    "typeDescription": "/** 4036: 通讯录忽略好友请求的多端同步消息 */",
+    "contentClazz": "ContactsIgnoreFriendContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/contactsIgnoreFriendContent.js",
+    "classFileRelative": "contactsIgnoreFriendContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "GET_HIRING_INTENTIONS",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "GET_HIRING_INTENTIONS",
-    "contentClazz": "RecruitGetHiringIntentionsContent"
+    "typeValue": 3105,
+    "typeDescription": "/** 3105: 招聘获取应聘意向 */",
+    "contentClazz": "RecruitGetHiringIntentionsContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "GET_HIRING_INTENTIONS_REASON",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "GET_HIRING_INTENTIONS_REASON",
-    "contentClazz": "RecruitGetHiringIntentionsReasonContent"
+    "typeValue": 3107,
+    "typeDescription": "/** 3107: 招聘获取应聘意向有原因 tips */",
+    "contentClazz": "RecruitGetHiringIntentionsReasonContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "GET_HIRING_INTENTIONS_NO_REASON",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "GET_HIRING_INTENTIONS_NO_REASON",
-    "contentClazz": "RecruitGetHiringIntentionsNoReasonContent"
+    "typeValue": 3106,
+    "typeDescription": "/** 3106: 招聘获取应聘意向无原因 tips */",
+    "contentClazz": "RecruitGetHiringIntentionsNoReasonContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "FEEDBACK_SHARE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "FEEDBACK_SHARE_MESSAGE",
-    "contentClazz": "FeedbackShareMessageContent"
+    "typeValue": 3111,
+    "typeDescription": "/** 3111: 工作管理-反馈分享卡片消息 */",
+    "contentClazz": "FeedbackShareMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/feedbackShareMessageContent.js",
+    "classFileRelative": "feedbackShareMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECRUIT_CHANGE_TIME_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUIT_CHANGE_TIME_CARD",
-    "contentClazz": "RecruitChangeTimeContent"
+    "typeValue": 3114,
+    "typeDescription": "/** 3114: 招聘面邀修改时间 card */",
+    "contentClazz": "RecruitChangeTimeContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/recruitChangeTimeContent.js",
+    "classFileRelative": "recruitChangeTimeContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "RECRUIT_CHANGE_TIME_TIPS",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "RECRUIT_CHANGE_TIME_TIPS",
-    "contentClazz": "RecruitChangeTimeMessageNotification"
+    "typeValue": 3115,
+    "typeDescription": "/** 3115: 招聘面邀修改时间 card */",
+    "contentClazz": "RecruitChangeTimeMessageNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "WORK_FINISHED_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_FINISHED_NOTICE",
-    "contentClazz": "WorkFinishedCardContent"
+    "typeValue": 3113,
+    "typeDescription": "/** 3113: 工作管理-目标&项目完成消息通知（单向消息） */",
+    "contentClazz": "WorkFinishedCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workFinishedCardContent.js",
+    "classFileRelative": "workFinishedCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "OUTPUT_APPRAISE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "OUTPUT_APPRAISE_MESSAGE",
-    "contentClazz": "OutputAppraiseMessageContent"
+    "typeValue": 3122,
+    "typeDescription": "/** 3122: 工作管理-产出评价卡片消息 */",
+    "contentClazz": "OutputAppraiseMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/outputAppraiseMessageContentNew.js",
+    "classFileRelative": "outputAppraiseMessageContentNew.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "OUTPUT_APPRAISE_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "OUTPUT_APPRAISE_MESSAGE_NEW",
-    "contentClazz": "OutputAppraiseMessageContentNew"
+    "typeValue": 3133,
+    "typeDescription": "/** 3133: 工作管理-执行内容分工评价通知卡片 */",
+    "contentClazz": "OutputAppraiseMessageContentNew",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "CONVERSATION_TIMESTAMP_SYNC",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "CONVERSATION_TIMESTAMP_SYNC",
-    "contentClazz": "ConversationTimestampSyncContent"
+    "typeValue": 4034,
+    "typeDescription": "/** 4034: 会话时间多端同步 */",
+    "contentClazz": "ConversationTimestampSyncContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/ConversationTimestampSyncContent.js",
+    "classFileRelative": "ConversationTimestampSyncContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SEEKER_JOIN_WORK_MESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SEEKER_JOIN_WORK_MESSAGE",
-    "contentClazz": "SeekerJoinWorkMessageContent"
+    "typeValue": 3108,
+    "typeDescription": "/** 3108: 求职者入职后发送与招聘者成为同事的及查看机会会话消息 */",
+    "contentClazz": "SeekerJoinWorkMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/seekerJoinWorkMessageContent.js",
+    "classFileRelative": "seekerJoinWorkMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MAIL_MULTI_SYNC",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MAIL_MULTI_SYNC",
-    "contentClazz": "MailMultiSyncMessageContent"
+    "typeValue": 3500,
+    "typeDescription": "/**3500 邮箱多端同步账号变更通知 */",
+    "contentClazz": "MailMultiSyncMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mailMultiSyncMessageContent.js",
+    "classFileRelative": "mailMultiSyncMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MAIL_MULTI_UNREAD_SYNC",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "MAIL_MULTI_UNREAD_SYNC",
-    "contentClazz": "MailMultiUnreadSyncMessageContent"
+    "typeValue": 3501,
+    "typeDescription": "/**3501 邮箱多端未读数通知 */",
+    "contentClazz": "MailMultiUnreadSyncMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mailMultiUnreadSyncMessageContent.js",
+    "classFileRelative": "mailMultiUnreadSyncMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "App_Friend_Card_VV",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "App_Friend_Card_VV",
-    "contentClazz": "AppFriendCardMessageContent"
+    "typeValue": 3005,
+    "typeDescription": "/** 3005: 移动端发送好友卡片 */",
+    "contentClazz": "AppFriendCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/appFriendCardMessageContent.js",
+    "classFileRelative": "appFriendCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "GROUP_LINK_APPLICATION_NOTIFICATION",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "GROUP_LINK_APPLICATION_NOTIFICATION",
-    "contentClazz": "GroupLinkApplicationNotification"
+    "typeValue": 4100,
+    "typeDescription": "/** 4100: 群关联申请，群成员入群申请通知消息\t\t */",
+    "contentClazz": "GroupLinkApplicationNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "MAIN_GROUP_AT_SUBGROUP_MESSAGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "MAIN_GROUP_AT_SUBGROUP_MESSAGE",
-    "contentClazz": "MainGroupAtSubGroupMessageContent"
+    "typeValue": 4101,
+    "typeDescription": "/** 4101: 主群@子群消息\t */",
+    "contentClazz": "MainGroupAtSubGroupMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mainGroupAtSubGroupMessageContent.ts",
+    "classFileRelative": "mainGroupAtSubGroupMessageContent.ts",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "SCAN_QR_JOIN_GROUP_NOTIFICATION",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "SCAN_QR_JOIN_GROUP_NOTIFICATION",
-    "contentClazz": "ScanQrJoinGroupNotificationContent"
+    "typeValue": 4102,
+    "typeDescription": "/** 4102: xx通过扫描xx的二维码进入群聊 */",
+    "contentClazz": "ScanQrJoinGroupNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "LINK_GROUP_NOTIFICATION",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "LINK_GROUP_NOTIFICATION",
-    "contentClazz": "LinkGroupNotificationContent"
+    "typeValue": 4103,
+    "typeDescription": "/** 4103: 建立或解除群的关联\t */",
+    "contentClazz": "LinkGroupNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "GROUP_LINK_APPLICATION_NOTIFICATION_SYNC",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "GROUP_LINK_APPLICATION_NOTIFICATION_SYNC",
-    "contentClazz": "GroupLinkApplicationNotificationSyncContent"
+    "typeValue": 4104,
+    "typeDescription": "/** 4104: 群关联申请，群成员入群申请通知消息的同步消息\t */",
+    "contentClazz": "GroupLinkApplicationNotificationSyncContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EXTERNAL_USER_JOIN_GROUP",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EXTERNAL_USER_JOIN_GROUP",
-    "contentClazz": "ExternalUserJoinGroupHint"
+    "typeValue": 130,
+    "typeDescription": "/** 130: 外部用户入群提示\t */",
+    "contentClazz": "ExternalUserJoinGroupHint",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "VV_CLOUD_DISK_APPLY_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "VV_CLOUD_DISK_APPLY_CARD",
-    "contentClazz": "vvCloudDiskContent"
+    "typeValue": 3504,
+    "typeDescription": "/** 3504: 微盘申请的卡片\t */",
+    "contentClazz": "vvCloudDiskContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/vvCloudDiskContent.ts",
+    "classFileRelative": "vvCloudDiskContent.ts",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "VV_CLOUD_DISK_APPLY_RESULT_NOTIFICATION",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "VV_CLOUD_DISK_APPLY_RESULT_NOTIFICATION",
-    "contentClazz": "VVCloudDiskApplyResultNotification"
+    "typeValue": 3505,
+    "typeDescription": "/** 3505: 微盘申请处理结果\t */",
+    "contentClazz": "VVCloudDiskApplyResultNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "USER_STATUS_SYNC",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "USER_STATUS_SYNC",
-    "contentClazz": "UserStatusSyncMessageContent"
+    "typeValue": 4201,
+    "typeDescription": "/** 4201: 设置工作状态的同步消息\t*/",
+    "contentClazz": "UserStatusSyncMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/userStatusSyncMessageContent.js",
+    "classFileRelative": "userStatusSyncMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "quitGroupStatusUpdateNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "QUIT_GROUP_STATUS_UPDATE",
-    "contentClazz": "QuitGroupStatusUpdateNotification"
+    "typeValue": 4112,
+    "typeDescription": "/** 4112: 退出群提醒状态更改 */",
+    "contentClazz": "QuitGroupStatusUpdateNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "eduGroupAddSuccessNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_GROUP_INVITER_SUCCESS",
-    "contentClazz": "EduGroupAddSuccessNotification"
+    "typeValue": 4117,
+    "typeDescription": "/** 4117: 教育群邀请成功系统提示 */",
+    "contentClazz": "EduGroupAddSuccessNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "eduJoinSuccessNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_JOIN_SUCCESS",
-    "contentClazz": "EduJoinSuccessNotification"
+    "typeValue": 4129,
+    "typeDescription": null,
+    "contentClazz": "EduJoinSuccessNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "eduSendGroupInvitationNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_SEND_GROUP_INVITATION",
-    "contentClazz": "EduSendGroupInvitationNotification"
+    "typeValue": 4120,
+    "typeDescription": "/** 4120: 教育群向谁发送了入群邀请 */",
+    "contentClazz": "EduSendGroupInvitationNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "VIRTUAL_GROUP_ANSWER_MRESSAGE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "VIRTUAL_GROUP_ANSWER_MRESSAGE",
-    "contentClazz": "VirtualGroupAnswerMessageContent"
+    "typeValue": 4110,
+    "typeDescription": "/** 4110: 虚拟群回应的同步消息\t*/",
+    "contentClazz": "VirtualGroupAnswerMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "GENERAL_GROUP_INFO_CHANGE_NOTIFICATION",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "GENERAL_GROUP_INFO_CHANGE_NOTIFICATION",
-    "contentClazz": "GeneralGroupInfoChangeNotificationContent"
+    "typeValue": 4111,
+    "typeDescription": null,
+    "contentClazz": "GeneralGroupInfoChangeNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "MAILBOX_EMAIL_VIEW_REQUEST",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EMAIlBOX_VIEW_EMAIL_REQUEST",
-    "contentClazz": "MailboxEmailViewRequestMessageContent"
+    "typeValue": 3502,
+    "typeDescription": "/** 3502：申请查看对方邮件 */",
+    "contentClazz": "MailboxEmailViewRequestMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mailboxEmailViewRequestMessageContent.js",
+    "classFileRelative": "mailboxEmailViewRequestMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "MAILBOX_EMAIL_VIEW_REQUEST_TIPS",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EMAIlBOX_VIEW_EMAIL_REQUEST_TIPS",
-    "contentClazz": "MailboxRequestDecisionMessageContent"
+    "typeValue": 3503,
+    "typeDescription": "/** 3503：申请查看对方邮件决策结果 */",
+    "contentClazz": "MailboxRequestDecisionMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/mailboxRequestDecisionMessageContent.js",
+    "classFileRelative": "mailboxRequestDecisionMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "POI_SHARE_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "POI_SHARE_MSG",
-    "contentClazz": "PoiShareMsgMessageContent"
+    "typeValue": 4113,
+    "typeDescription": "/** 3001: 位置消息 */",
+    "contentClazz": "PoiShareMsgMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/poiShareMsgMessageContent.js",
+    "classFileRelative": "poiShareMsgMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "ORG_ALLMEMBER_INVITE_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "ORG_ALLMEMBER_INVITE_MSG",
-    "contentClazz": "OrgAllMemberGroupMessageContent"
+    "typeValue": 4127,
+    "typeDescription": "/** 4127: 组织群下全员群邀请卡片消息 */",
+    "contentClazz": "OrgAllMemberGroupMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/OrgAllMemberGroupMessageContent.js",
+    "classFileRelative": "OrgAllMemberGroupMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_CUSTOMER_INVITED_TEACHER_JOIN_ORG_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_CUSTOMER_INVITED_TEACHER_JOIN_ORG_CARD",
-    "contentClazz": "EduInvitedTeacherJoinOrgContent"
+    "typeValue": 3906,
+    "typeDescription": null,
+    "contentClazz": "EduInvitedTeacherJoinOrgContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitedTeacherJoinOrgContent.js",
+    "classFileRelative": "eduInvitedTeacherJoinOrgContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_CHOOSE_TYPE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_CHOOSE_TYPE",
-    "contentClazz": "EduChooseTypeMessageContent"
+    "typeValue": 4114,
+    "typeDescription": "/** 4114: 教育群选择类型消息 */",
+    "contentClazz": "EduChooseTypeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/EduChooseTypeMessageContent.ts",
+    "classFileRelative": "EduChooseTypeMessageContent.ts",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITE_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_INVITE_MSG",
-    "contentClazz": "EduInviteMessageContent"
+    "typeValue": 4116,
+    "typeDescription": "/** 4116: 教育群邀请卡片消息 */",
+    "contentClazz": "EduInviteMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/EduInviteMessageContent.js",
+    "classFileRelative": "EduInviteMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITE_STUDENT_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_INVITE_STUDENT",
-    "contentClazz": "EduStudentInviteMessageContent"
+    "typeValue": 4126,
+    "typeDescription": null,
+    "contentClazz": "EduStudentInviteMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITE_STUDENT_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_CLASS_INVITE_STUDENT",
-    "contentClazz": "EduClassInviteStudentMessageContent"
+    "typeValue": 3905,
+    "typeDescription": null,
+    "contentClazz": "EduClassInviteStudentMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduClassStudentInviteMessageContent.js",
+    "classFileRelative": "eduClassStudentInviteMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_INVITATION",
-    "contentClazz": "EduInvitationMessageContent"
+    "typeValue": 3601,
+    "typeDescription": "/** 3601: 教育计划邀请通知*/",
+    "contentClazz": "EduInvitationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageContent.js",
+    "classFileRelative": "eduInvitationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_ACCEPT",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_ACCEPT",
-    "contentClazz": "EduInvitationMessageAcceptContent"
+    "typeValue": 3606,
+    "typeDescription": "/** 3606: 接受教育计划邀请 */",
+    "contentClazz": "EduInvitationMessageAcceptContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageAcceptContent.js",
+    "classFileRelative": "eduInvitationMessageAcceptContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_PLAN_SIGN",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_PLAN_SIGN",
-    "contentClazz": "EduInvitationMessageAcceptContent"
+    "typeValue": 3638,
+    "typeDescription": "/** 签到 */",
+    "contentClazz": "EduInvitationMessageAcceptContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageAcceptContent.js",
+    "classFileRelative": "eduInvitationMessageAcceptContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_REFUSE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_REFUSE",
-    "contentClazz": "EduInvitationMessageRefuseContent"
+    "typeValue": 3607,
+    "typeDescription": "/** 3607: 拒绝教育计划邀请 */",
+    "contentClazz": "EduInvitationMessageRefuseContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageRefuseContent.js",
+    "classFileRelative": "eduInvitationMessageRefuseContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_REFUSE_REASON",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_INVITATION_REFUSE_REASON",
-    "contentClazz": "EduInvitationRefuseReasonCardContent"
+    "typeValue": 3605,
+    "typeDescription": "/** 3605: 拒绝教育计划邀请带原因消息 */",
+    "contentClazz": "EduInvitationRefuseReasonCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationRefuseReasonCardContent.js",
+    "classFileRelative": "eduInvitationRefuseReasonCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_CHANGE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_INVITATION_CHANGE",
-    "contentClazz": "EduInvitationChangeMessageContent"
+    "typeValue": 3602,
+    "typeDescription": "/** 3602: 教育计划邀请修改时间 */",
+    "contentClazz": "EduInvitationChangeMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationChangeMessageContent.js",
+    "classFileRelative": "eduInvitationChangeMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_CANCELED_INVITATION",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_CANCELED_INVITATION",
-    "contentClazz": "EduCancelInvitationMessageContent"
+    "typeValue": 3604,
+    "typeDescription": "/** 3604: 教育计划邀请取消邀约 */",
+    "contentClazz": "EduCancelInvitationMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCancelInvitationMessageContent.js",
+    "classFileRelative": "eduCancelInvitationMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_CANCEL",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_CANCEL",
-    "contentClazz": "EduCanceledMessageContent"
+    "typeValue": 3603,
+    "typeDescription": "/** 3603: 教育计划已取消 */",
+    "contentClazz": "EduCanceledMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCanceledMessageContent.js",
+    "classFileRelative": "eduCanceledMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_CANCEL_TO_FAMILY",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_CANCEL_TO_FAMILY",
-    "contentClazz": "EduInvitationMessageCancelToFamilyContent"
+    "typeValue": 3608,
+    "typeDescription": "/** 3608: 组织人取消计划给家庭群发 */",
+    "contentClazz": "EduInvitationMessageCancelToFamilyContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageCancelToFamilyContent.js",
+    "classFileRelative": "eduInvitationMessageCancelToFamilyContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_ACCEPT_TO_FAMILY",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_ACCEPT_TO_FAMILY",
-    "contentClazz": "EduInvitationMessageAcceptToFamilyContent"
+    "typeValue": 3609,
+    "typeDescription": "/** 3609: 家长接受计划给家庭群发 */",
+    "contentClazz": "EduInvitationMessageAcceptToFamilyContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageMemberChangeContent.js",
+    "classFileRelative": "eduInvitationMessageMemberChangeContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MEMBER_CHANGE",
     "flag": "PersistFlag.Transparent",
+    "flagValue": 4,
+    "flagDescription": "/** 服务端不保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_MEMBER_CHANGE",
-    "contentClazz": "EduInvitationMessageMemberChangeContent"
+    "typeValue": 3801,
+    "typeDescription": "/** 3801: 成员列表解除关联，转移所有者 */",
+    "contentClazz": "EduInvitationMessageMemberChangeContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_REFUSE_TO_FAMILY",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_REFUSE_TO_FAMILY",
-    "contentClazz": "EduInvitationMessageRefuseToFamilyContent"
+    "typeValue": 3610,
+    "typeDescription": "/** 3610: 家长拒绝教育计划邀请给家庭群发 */",
+    "contentClazz": "EduInvitationMessageRefuseToFamilyContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageRefuseToFamilyContent.js",
+    "classFileRelative": "eduInvitationMessageRefuseToFamilyContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "exchangeRewardNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EXCHANGE_REWARD_MESSAGE",
-    "contentClazz": "ExchangeRewardNotification"
+    "typeValue": 4125,
+    "typeDescription": "/** 4125: 兑换奖励消息 */",
+    "contentClazz": "ExchangeRewardNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_FROM_FAMILY_TO_FAMILY",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_FROM_FAMILY_TO_FAMILY",
-    "contentClazz": "EduInvitationMessageFromFamilyToFamilyContent"
+    "typeValue": 3611,
+    "typeDescription": "/** 3611: 家庭空间内创建计划给家庭群发 */",
+    "contentClazz": "EduInvitationMessageFromFamilyToFamilyContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageFromFamilyToFamilyContent.js",
+    "classFileRelative": "eduInvitationMessageFromFamilyToFamilyContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_FAMILY_BUY_COURSE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_FAMILY_BUY_COURSE",
-    "contentClazz": "EduFamilyBuyCourseContent"
+    "typeValue": 3903,
+    "typeDescription": "/** 3611: 家庭空间内创建计划给家庭群发 */",
+    "contentClazz": "EduFamilyBuyCourseContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduFamilyBuyCourseContent.js",
+    "classFileRelative": "eduFamilyBuyCourseContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_INVITATION_EDIT_FROM_OTHER_TO_ORGANIZATION",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_INVITATION_EDIT_FROM_OTHER_TO_ORGANIZATION",
-    "contentClazz": "EduInvitationMessageEditFromOtherToOrganizationContent"
+    "typeValue": 3612,
+    "typeDescription": "/** 3612: 其他人编辑计划给组织人发消息 */",
+    "contentClazz": "EduInvitationMessageEditFromOtherToOrganizationContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduInvitationMessageEditFromOtherToOrganizationContent.js",
+    "classFileRelative": "eduInvitationMessageEditFromOtherToOrganizationContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "eduGroupRelatedFamilyNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_GROUP_RELATED_FAMILY",
-    "contentClazz": "EduGroupRelatedFamilyNotification"
+    "typeValue": 4121,
+    "typeDescription": "/** 4121: 教育群邀请成功系统提示 */",
+    "contentClazz": "EduGroupRelatedFamilyNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EDU_ASK_LEAVE_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_ASK_LEAVE_TO_FAMILY",
-    "contentClazz": "EduAskLeaveToFamilyMessageContent"
+    "typeValue": 3616,
+    "typeDescription": "/** 请假通知-家庭群 */",
+    "contentClazz": "EduAskLeaveToFamilyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduAskLeaveToFamilyMessageContent.js",
+    "classFileRelative": "eduAskLeaveToFamilyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_ASK_LEAVE_TO_INSTITUTION",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_ASK_LEAVE_TO_INSTITUTION",
-    "contentClazz": "EduAskLeaveToInstitutionMessageContent"
+    "typeValue": 3617,
+    "typeDescription": "/** 请假通知-机构群 */",
+    "contentClazz": "EduAskLeaveToInstitutionMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduAskLeaveToInstitutionMessageContent.js",
+    "classFileRelative": "eduAskLeaveToInstitutionMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_ASK_LEAVE_CANCEL_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_ASK_LEAVE_CANCEL_TO_FAMILY",
-    "contentClazz": "EduAskLeaveCancelToFamilyMessageContent"
+    "typeValue": 3618,
+    "typeDescription": "/** 取消请假通知-家庭群 */",
+    "contentClazz": "EduAskLeaveCancelToFamilyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduAskLeaveCancelToFamilyMessageContent.js",
+    "classFileRelative": "eduAskLeaveCancelToFamilyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_ASK_LEAVE_CANCEL_TO_INSTITUTION",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_ASK_LEAVE_CANCEL_TO_INSTITUTION",
-    "contentClazz": "EduAskLeaveCancelToInstitutionMessageContent"
+    "typeValue": 3619,
+    "typeDescription": "/** 取消请假通知-机构群 */",
+    "contentClazz": "EduAskLeaveCancelToInstitutionMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduAskLeaveCancelToInstitutionMessageContent.js",
+    "classFileRelative": "eduAskLeaveCancelToInstitutionMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_APPLY_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_APPLY_TO_FAMILY",
-    "contentClazz": "EduMoveCoursesApplyMessageContent"
+    "typeValue": 3621,
+    "typeDescription": "/** 调课申请通知-家庭群 */",
+    "contentClazz": "EduMoveCoursesApplyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesApplyMessageContent.js",
+    "classFileRelative": "eduMoveCoursesApplyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_APPLY_TO_AGENCY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_APPLY_TO_AGENCY",
-    "contentClazz": "EduMoveCoursesApplyMessageContentToAgency"
+    "typeValue": 3633,
+    "typeDescription": "/** 调课申请通知-机构群 */",
+    "contentClazz": "EduMoveCoursesApplyMessageContentToAgency",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesApplyMessageContentToAgency.js",
+    "classFileRelative": "eduMoveCoursesApplyMessageContentToAgency.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_DONE_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_DONE_TO_FAMILY",
-    "contentClazz": "EduMoveCoursesDoneMessageContent"
+    "typeValue": 3622,
+    "typeDescription": "/** 完成调课通知-家庭群 */",
+    "contentClazz": "EduMoveCoursesDoneMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesDoneMessageContent.js",
+    "classFileRelative": "eduMoveCoursesDoneMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_DONE_TO_AGENCY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_DONE_TO_AGENCY",
-    "contentClazz": "EduMoveCoursesDoneToAgencyMessageContent"
+    "typeValue": 3623,
+    "typeDescription": "/** 完成调课通知-机构群 */",
+    "contentClazz": "EduMoveCoursesDoneToAgencyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesDoneToAgencyMessageContent.js",
+    "classFileRelative": "eduMoveCoursesDoneToAgencyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_REJECT_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_REJECT_TO_FAMILY",
-    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToFamily"
+    "typeValue": 3631,
+    "typeDescription": "/** 调课已拒绝-家庭侧 */",
+    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToFamily",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesApplyMessageContentRejectToFamily.js",
+    "classFileRelative": "eduMoveCoursesApplyMessageContentRejectToFamily.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_REJECT_TO_AGENCY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_REJECT_TO_AGENCY",
-    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToAgency"
+    "typeValue": 3632,
+    "typeDescription": "/** 调课已拒绝-机构群 */",
+    "contentClazz": "EduMoveCoursesApplyMessageContentRejectToAgency",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesApplyMessageContentRejectToAgency.js",
+    "classFileRelative": "eduMoveCoursesApplyMessageContentRejectToAgency.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_SENDGROUPCHAT_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_SENDGROUPCHAT_CARD",
-    "contentClazz": "EduMoveCourseSendGroupChatCard"
+    "typeValue": 3634,
+    "typeDescription": "/** 调课详情页-第一次创建群聊发送调课卡片 */",
+    "contentClazz": "EduMoveCourseSendGroupChatCard",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/EduMoveCourseSendGroupChatCard.js",
+    "classFileRelative": "EduMoveCourseSendGroupChatCard.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_GROUP_BOOK_COURSE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_GROUP_BOOK_COURSE",
-    "contentClazz": "EduGroupBookCourse"
+    "typeValue": 3908,
+    "typeDescription": "/** 教育群约课入群讨论 */",
+    "contentClazz": "EduGroupBookCourse",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/EduGroupBookCourse.js",
+    "classFileRelative": "EduGroupBookCourse.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_UPLOAD_STYLE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_UPLOAD_STYLE",
-    "contentClazz": "EduUploadStyleMessageContent"
+    "typeValue": 3624,
+    "typeDescription": "/** 上传风采通知 */",
+    "contentClazz": "EduUploadStyleMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduUploadStyleMessageContent.js",
+    "classFileRelative": "eduUploadStyleMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_HOMEWORKE_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_HOMEWORKE_MSG",
-    "contentClazz": "EduHomeWorkeMsgMessageContent"
+    "typeValue": 3625,
+    "typeDescription": "/** 作业布置--老师批改作业-通知 */",
+    "contentClazz": "EduHomeWorkeMsgMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduHomeWorkeMsgMessageContent.js",
+    "classFileRelative": "eduHomeWorkeMsgMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_HOMEWORKE_SUBMIT_TO_AGENCY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_HOMEWORKE_SUBMIT_TO_AGENCY",
-    "contentClazz": "EduHomeWorkeSubmitToAgencyMessageContent"
+    "typeValue": 3627,
+    "typeDescription": "/**作业提交 */",
+    "contentClazz": "EduHomeWorkeSubmitToAgencyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduHomeWorkeSubmitToAgencyMessageContent.js",
+    "classFileRelative": "eduHomeWorkeSubmitToAgencyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_HOMEWORKE_SUBMIT_TO_FAMILY",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_HOMEWORKE_SUBMIT_TO_FAMILY",
-    "contentClazz": "EduHomeWorkeSubmitToFamilyMessageContent"
+    "typeValue": 3626,
+    "typeDescription": null,
+    "contentClazz": "EduHomeWorkeSubmitToFamilyMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduHomeWorkeSubmitToFamilyMessageContent.js",
+    "classFileRelative": "eduHomeWorkeSubmitToFamilyMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_SCORE_SUBMIT_MSG",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_SCORE_SUBMIT_MSG",
-    "contentClazz": "EduScoreSubmitMsgMessageContent"
+    "typeValue": 3629,
+    "typeDescription": "/**评分卡片 */",
+    "contentClazz": "EduScoreSubmitMsgMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduScoreSubmitMsgMessageContent.js",
+    "classFileRelative": "eduScoreSubmitMsgMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_COURSE_SHARE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_COURSE_SHARE_CARD",
-    "contentClazz": "EduCourseShareCardMessageContent"
+    "typeValue": 4132,
+    "typeDescription": null,
+    "contentClazz": "EduCourseShareCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCourseShareCardMessageContent.js",
+    "classFileRelative": "eduCourseShareCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_HOMEWORKE_READ",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_HOMEWORKE_READ",
-    "contentClazz": "EduHomeWorkeSubmitReadMessageContent"
+    "typeValue": 3628,
+    "typeDescription": null,
+    "contentClazz": "EduHomeWorkeSubmitReadMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduHomeWorkeSubmitReadMessageContent.js",
+    "classFileRelative": "eduHomeWorkeSubmitReadMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_SCHEDULE_ACLASS",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_SCHEDULE_ACLASS",
-    "contentClazz": "EduScheduleAClassMessageContent"
+    "typeValue": 3904,
+    "typeDescription": "/** 3630: 约课成功通知*/",
+    "contentClazz": "EduScheduleAClassMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduScheduleAClassMessageContent.js",
+    "classFileRelative": "eduScheduleAClassMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_COURSE_COMPLETE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_COURSE_COMPLETE",
-    "contentClazz": "EduCourseCompleteMessageContent"
+    "typeValue": 3901,
+    "typeDescription": "/** 3901: 课程完成通知*/",
+    "contentClazz": "EduCourseCompleteMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCourseCompleteMessageContent.js",
+    "classFileRelative": "eduCourseCompleteMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_PLAN_COMPLETE_CASE_UNSIGN",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_PLAN_COMPLETE_CASE_UNSIGN",
-    "contentClazz": "EduPlanCompleteCaseUnsignMessageContent"
+    "typeValue": 3620,
+    "typeDescription": "/**计划结束时未签到 */",
+    "contentClazz": "EduPlanCompleteCaseUnsignMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduPlanCompleteCaseUnsignMessageContent.js",
+    "classFileRelative": "eduPlanCompleteCaseUnsignMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_STUDENT_JOIN_COURSE_PLAN",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_STUDENT_JOIN_COURSE_PLAN",
-    "contentClazz": "EduStudentJoinCoursePlanMessageContent"
+    "typeValue": 3630,
+    "typeDescription": "/**学生加入课程计划 */",
+    "contentClazz": "EduStudentJoinCoursePlanMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduStudentJoinCoursePlanMessageContent.js",
+    "classFileRelative": "eduStudentJoinCoursePlanMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_TEACHER_JOIN_COURSE_PLAN",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_TEACHER_JOIN_COURSE_PLAN",
-    "contentClazz": "EduTeacherJoinCoursePlanMessageContent"
+    "typeValue": 3907,
+    "typeDescription": "/**老师加入课程计划 */",
+    "contentClazz": "EduTeacherJoinCoursePlanMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduTeacherJoinCoursePlanMessageContent.js",
+    "classFileRelative": "eduTeacherJoinCoursePlanMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_COURSE_PLAN_CREATED",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_COURSE_PLAN_CREATED",
-    "contentClazz": "EduCoursePlanCreatedMessageContent"
+    "typeValue": 3311,
+    "typeDescription": "/**课程计划已生成 */",
+    "contentClazz": "EduCoursePlanCreatedMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCoursePlanCreatedMessageContent.js",
+    "classFileRelative": "eduCoursePlanCreatedMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_COURSE_PLAN_CREATED_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_COURSE_PLAN_CREATED_CARD",
-    "contentClazz": "EduCoursePlanCreatedCardMessageContent"
+    "typeValue": 3314,
+    "typeDescription": "/**课程计划已生成 */",
+    "contentClazz": "EduCoursePlanCreatedCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCoursePlanCreatedCardMessageContent.js",
+    "classFileRelative": "eduCoursePlanCreatedCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_PLAN_CREATED",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_PLAN_CREATED",
-    "contentClazz": "EduMoveCoursesPlanCreatedMessageContent"
+    "typeValue": 3312,
+    "typeDescription": "/**调课计划已生成 */",
+    "contentClazz": "EduMoveCoursesPlanCreatedMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesPlanCreatedMessageContent.js",
+    "classFileRelative": "eduMoveCoursesPlanCreatedMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "EDU_MOVE_COURSES_STUDENT_JOIN_PLAN",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "EDU_MOVE_COURSES_STUDENT_JOIN_PLAN",
-    "contentClazz": "EduMoveCoursesStudentJoinPlanMessageContent"
+    "typeValue": 3313,
+    "typeDescription": "/**调课学生已加入计划 */",
+    "contentClazz": "EduMoveCoursesStudentJoinPlanMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduMoveCoursesStudentJoinPlanMessageContent.js",
+    "classFileRelative": "eduMoveCoursesStudentJoinPlanMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "WorkManageTurnoverChange",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_TURNOVER_CHANGE",
-    "contentClazz": "WorkManageTurnoverChange"
+    "typeValue": 3129,
+    "typeDescription": "/** 3129: 工作管理流转人变更 */",
+    "contentClazz": "WorkManageTurnoverChange",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManageTurnoverChange.js",
+    "classFileRelative": "workManageTurnoverChange.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "workManageIntraGroupFlow",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_INTRA_GROUP_FLOW",
-    "contentClazz": "workManageIntraGroupFlow"
+    "typeValue": 3130,
+    "typeDescription": "/** 3130: 群内流转 */",
+    "contentClazz": "workManageIntraGroupFlow",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "workManageReturnInGroupNotifications",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_RETURN_IN_GROUP_NOTIFICATIONS",
-    "contentClazz": "workManageReturnInGroupNotifications"
+    "typeValue": 3132,
+    "typeDescription": "/** 3132: 退回群内通知 */",
+    "contentClazz": "workManageReturnInGroupNotifications",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "workManageReturnNoticeToSpecificPerson",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_RETURN_NOTICE_TO_SPECIFIC_PERSON",
-    "contentClazz": "workManageReturnNoticeToSpecificPerson"
+    "typeValue": 3131,
+    "typeDescription": "/** 3131: 退回通知具体人 */",
+    "contentClazz": "workManageReturnNoticeToSpecificPerson",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "workManagementNoticeApprovalStatus",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_NOTICE_APPROVAL_STATUS",
-    "contentClazz": "WorkManagementNoticeApprovalStatus"
+    "typeValue": 3134,
+    "typeDescription": null,
+    "contentClazz": "WorkManagementNoticeApprovalStatus",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementNoticeApprovalStatus.js",
+    "classFileRelative": "workManagementNoticeApprovalStatus.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "orgGroupAddSuccessNotification",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "ORG_GROUP_INVITE_SUCCESS_VIEW_LIST",
-    "contentClazz": "OrgGroupAddSuccessNotification"
+    "typeValue": 4128,
+    "typeDescription": "/** 新组织群邀请列表消息code */",
+    "contentClazz": "OrgGroupAddSuccessNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "EDU_CUSTOMER_READY_TO_BUY_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "EDU_CUSTOMER_READY_TO_BUY_CARD",
-    "contentClazz": "EduCustomerReadyToBuyCardMessageContent"
+    "typeValue": 4131,
+    "typeDescription": null,
+    "contentClazz": "EduCustomerReadyToBuyCardMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/eduCustomerReadyToBuyCardMessageContent.js",
+    "classFileRelative": "eduCustomerReadyToBuyCardMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "JOIN_TENANT_APPLICATION_APPROVED",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "JOIN_TENANT_APPLICATION_APPROVED",
-    "contentClazz": "JoinTenantApplicationApproved"
+    "typeValue": 3065,
+    "typeDescription": "/** 3065: 被同意加入组织 **/",
+    "contentClazz": "JoinTenantApplicationApproved",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/joinTenantApplicationApproved.js",
+    "classFileRelative": "joinTenantApplicationApproved.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "Lynx_Card",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "Lynx_Card",
-    "contentClazz": "LynxMessageContent"
+    "typeValue": 4168,
+    "typeDescription": null,
+    "contentClazz": "LynxMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/lynxMessageContent.js",
+    "classFileRelative": "lynxMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "Lynx_Card_Update",
     "flag": "PersistFlag.No_Persist",
+    "flagValue": 0,
+    "flagDescription": "/** 服务端保存 + {客户端不保存 + 客户端不更新计数} */",
     "typeEnum": "Lynx_Card_Update",
-    "contentClazz": "LynxUpdateMessageContent"
+    "typeValue": 4169,
+    "typeDescription": null,
+    "contentClazz": "LynxUpdateMessageContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/lynxUpdateMessageContent.js",
+    "classFileRelative": "lynxUpdateMessageContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "IM_WORK_TASK_RESTART_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "IM_WORK_TASK_RESTART_NOTICE",
-    "contentClazz": "WorkManageRestartCardContent"
+    "typeValue": 3136,
+    "typeDescription": "/** 3136: 任务重启IM通知 */",
+    "contentClazz": "WorkManageRestartCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManageRestartCardContent.js",
+    "classFileRelative": "workManageRestartCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "IM_WORK_TASK_RESTART_GROUP_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "IM_WORK_TASK_RESTART_GROUP_NOTICE",
-    "contentClazz": "WorkManageRestartGroupCardContent"
+    "typeValue": 3135,
+    "typeDescription": "/** 3136: 任务重启IM群聊通知 */",
+    "contentClazz": "WorkManageRestartGroupCardContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManageRestartGroupCardContent.js",
+    "classFileRelative": "workManageRestartGroupCardContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "IM_FLOW_CARD_UPDATE_NOTICE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "IM_FLOW_DATA_UPDATE_NOTICE",
-    "contentClazz": "FlowDataUpdateNotification"
+    "typeValue": 3150,
+    "typeDescription": "/** 3150: 流程卡片更新IM通知 */",
+    "contentClazz": "FlowDataUpdateNotification",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "IM_FLOW_CARD_APPROVER_UPDATE_NOTICE",
     "flag": "PersistFlag.Persist",
+    "flagValue": 1,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端不更新计数} */",
     "typeEnum": "IM_FLOW_DATA_APPROVER_UPDATE_NOTICE",
-    "contentClazz": "FlowDataApproverUpdateNotificationContent"
+    "typeValue": 3151,
+    "typeDescription": "/** 3151: 流程卡片更新IM通知-审批人 */",
+    "contentClazz": "FlowDataApproverUpdateNotificationContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "OUTPUT_APPRAISE_EXECUTE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "OUTPUT_APPRAISE_EXECUTE",
-    "contentClazz": "WorkManagementOutputMessageContent"
+    "typeValue": 3137,
+    "typeDescription": "/** 3137: 工作管理-执行内容分工评价通知卡片 */",
+    "contentClazz": "WorkManagementOutputMessageContent",
+    "classFile": null,
+    "classFileRelative": null,
+    "extends": null,
+    "jsdoc": null
   },
   {
     "name": "TASK_EVALUATE_IM_PRIVATE_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "TASK_EVALUATE_IM_PRIVATE_NOTICE",
-    "contentClazz": "WorkManagementTaskEvaluate"
+    "typeValue": 3138,
+    "typeDescription": "/** 邀请任务评价- IM私聊通知 */",
+    "contentClazz": "WorkManagementTaskEvaluate",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementTaskEvaluate.js",
+    "classFileRelative": "workManagementTaskEvaluate.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "TASK_EVALUATE_REMIND_IM_PRIVATE_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "TASK_EVALUATE_REMIND_IM_PRIVATE_NOTICE",
-    "contentClazz": "WorkManagementTaskEvaluateRemind"
+    "typeValue": 3139,
+    "typeDescription": "/** 任务评价催办- IM私聊通知 */",
+    "contentClazz": "WorkManagementTaskEvaluateRemind",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementTaskEvaluateRemind.js",
+    "classFileRelative": "workManagementTaskEvaluateRemind.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "TASK_EVALUATE_COMPLETE_IM_GROUP_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "TASK_EVALUATE_COMPLETE_IM_GROUP_NOTICE",
-    "contentClazz": "WorkManagementGroupTaskEvaluate"
+    "typeValue": 3160,
+    "typeDescription": "/** 任务评价完成- 群聊打分通知 */",
+    "contentClazz": "WorkManagementGroupTaskEvaluate",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementGroupTaskEvaluate.js",
+    "classFileRelative": "workManagementGroupTaskEvaluate.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "WORK_MANAGEMENT_EXECUTIVE_COMPLETE_NOTICE",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_COMPLETE_NOTICE",
-    "contentClazz": "WorkManagementExecutiveCompleteContent"
+    "typeValue": 3142,
+    "typeDescription": null,
+    "contentClazz": "WorkManagementExecutiveCompleteContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementExecutiveCompleteContent.js",
+    "classFileRelative": "workManagementExecutiveCompleteContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "WORK_MANAGEMENT_EXECUTIVE_REMIND_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_REMIND_CARD",
-    "contentClazz": "WorkManagementExecutiveCbContent"
+    "typeValue": 3141,
+    "typeDescription": null,
+    "contentClazz": "WorkManagementExecutiveCbContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementExecutiveCbContent.js",
+    "classFileRelative": "workManagementExecutiveCbContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   },
   {
     "name": "WORK_MANAGEMENT_EXECUTIVE_INVITE_CARD",
     "flag": "PersistFlag.Persist_And_Count",
+    "flagValue": 3,
+    "flagDescription": "/** 服务端保存 + {客户端保存 + 客户端更新计数} */",
     "typeEnum": "WORK_MANAGEMENT_EXECUTIVE_INVITE_CARD",
-    "contentClazz": "WorkManagementExecutiveInviteContent"
+    "typeValue": 3140,
+    "typeDescription": null,
+    "contentClazz": "WorkManagementExecutiveInviteContent",
+    "classFile": "/Users/ikolf/web/vv-desktop/packages/sdk-middleware/wildfirechat/wfc/messages/workManagementExecutiveInviteContent.js",
+    "classFileRelative": "workManagementExecutiveInviteContent.js",
+    "extends": "JsonMessageContent",
+    "jsdoc": null
   }
 ]
