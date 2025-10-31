@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "@vv/wfc-mcp": "./dist/cli.js"
+    "run": "dist/cli.js"
   },
   "publishConfig": {
     "registry": "http://172.16.6.49:4873/"
