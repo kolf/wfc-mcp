@@ -1,10 +1,10 @@
 {
   "name": "@vv/wfc-mcp",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "start": "dist/cli.js"
+    "wfc-mcp": "dist/cli.js"
   },
   "publishConfig": {
     "registry": "http://172.16.6.49:4873/"
