@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "@vv/wfc-mcp": "./dist/cli.js"
+  },
   "publishConfig": {
     "registry": "http://172.16.6.49:4873/"
   },
@@ -10,7 +13,8 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js",
     "dev": "node --loader ts-node/esm src/index.ts",
-    "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts"
+    "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.20.1",
