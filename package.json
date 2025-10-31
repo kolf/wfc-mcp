@@ -7,7 +7,7 @@
     "registry": "http://172.16.6.49:4873/"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node scripts/postbuild.js",
     "start": "node dist/index.js",
     "dev": "node --loader ts-node/esm src/index.ts",
     "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts",

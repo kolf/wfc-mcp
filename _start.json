@@ -1,9 +1,0 @@
-{
-    "mcpServers": {
-        "wfc": {
-            "command": "npx",
-            "args": ["-y", "@vv/wfc-mcp"],
-            "env": {}
-        }
-    }
-}
