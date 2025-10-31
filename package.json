@@ -1,21 +1,28 @@
 {
-    "name": "@vv/wfc-mcp",
-    "version": "0.1.0",
-    "private": true,
-    "type": "module",
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "tsc -p tsconfig.json",
-        "start": "node dist/index.js",
-        "dev": "node --loader ts-node/esm src/index.ts",
-        "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts"
-    },
-    "dependencies": {
-        "@modelcontextprotocol/sdk": "^1.20.1",
-        "zod": "^3.23.8"
-    },
-    "devDependencies": {
-        "ts-node": "^10.9.2",
-        "typescript": "^5.6.3"
-    }
+  "name": "@vv/wfc-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "http://172.16.6.49:4873/"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "generate:docs": "node --loader ts-node/esm scripts/generate-docs.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "author": "shixiankang@vv.cn",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ]
 }
