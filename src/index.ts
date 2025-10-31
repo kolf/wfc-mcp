@@ -99,7 +99,7 @@ class ToolRegistry {
   private server: any;
   private dataLoader: DataLoader;
 
-  constructor(server: McpServer, dataLoader: DataLoader) {
+  constructor(server: any, dataLoader: DataLoader) {
     this.server = server;
     this.dataLoader = dataLoader;
   }
