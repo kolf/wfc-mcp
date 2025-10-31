@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "wfc": {
+            "timeout": 60,
+            "command": "bash",
+            "args": ["-lc", "cd /Users/ikolf/web/vv-desktop/packages/mcp-wfc && npm run start"],
+            "type": "stdio",
+            "disabled": false
+        }
+    }
+}
