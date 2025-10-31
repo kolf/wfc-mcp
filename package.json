@@ -4,7 +4,7 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "run": "dist/cli.js"
+    "start": "dist/cli.js"
   },
   "publishConfig": {
     "registry": "http://172.16.6.49:4873/"
